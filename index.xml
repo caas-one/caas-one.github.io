@@ -6,10 +6,22 @@
     <description>Recent content on CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 29 Sep 2018 22:02:19 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Oct 2018 12:15:28 +0800</lastBuildDate>
     
 	<atom:link href="https://caas-one.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-10-02)</title>
+      <link>https://caas-one.github.io/post/news.caas.one/posts/2018-10-02-caasone-daily-news/</link>
+      <pubDate>Tue, 02 Oct 2018 12:15:28 +0800</pubDate>
+      
+      <guid>https://caas-one.github.io/post/news.caas.one/posts/2018-10-02-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181002)
+ Extending Kubernetes with Custom Resources and Operator Frameworks: https://speakerdeck.com/ianlewis/extending-kubernetes-with-custom-resources-and-operator-frameworks How, and When, to Deploy Serverless: https://thenewstack.io/how-and-when-to-deploy-serverless/ In-depth introduction to Kubernetes admission webhooks: https://banzaicloud.com/blog/k8s-admission-webhooks/ Debug Kubernetes Service Locally with Telepresence: https://articles.microservices.com/debug-a-kubernetes-service-locally-with-telepresence-675eb6e94b09 Distributed Tracing Infrastructure with Jaeger on Kubernetes: https://medium.com/@masroor.hasan/tracing-infrastructure-with-jaeger-on-kubernetes-6800132a677  编辑：@maxwell92
+地址：http://k8s.today/
+[容器时代志愿编辑招募] https://mp.weixin.qq.com/s/BVBzWx_u1xfwSZGTO-6qlg [KubeCon福利] https://mp.weixin.qq.com/s/ARUF8fTKn3VUKxFrOShWBQ</description>
+    </item>
     
     <item>
       <title>技术日报(2018-10-01)</title>
@@ -135,6 +147,34 @@
       
       <guid>https://caas-one.github.io/about/</guid>
       <description>我们是容器时代公众号。我们致力于分享每日最新的容器生态圈文章，欢迎微信搜索容器时代，关注我们的公众号。 此处是我们日报的存档地址。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caas-one.github.io/post/news.caas.one/translation/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caas-one.github.io/post/news.caas.one/translation/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb/readme/</guid>
+      <description>使用Golang语言建造EventSourcing/CQRS的微服务  导读：
+本文的主要目的是通过EventSourcing和CQRS来构建事件驱动的微服务。构建真实世界的微服务是非常复杂的，其中最困难的部分是处理分散在各个微服务拥有的几个数据库中的数据。这使得构建跨多个微服务的业务事务变得非常复杂，并且查询数据时对多个数据库无法进行关联查询。因此，您必须使用一些架构方法从现实世界的角度构建微服务，您可以考虑使用事件驱动的体系结构，如EventSourcing。EventSourcing架构最好与CQRS结合使用。虽然本文是基于go语言实现，但代码简单清晰，清楚的介绍了EventSourcing和CQRS如何结合使用，其它语言的工程师也可阅读，相信会有帮助。
+ 在这篇文章中，我将演示Go中的一个简单的EventSourcing/CQRS示例，演示如何解决基于微服务的分布式系统的实际挑战。请记住，这篇文章的目的不是介绍EventSourcing和CQRS的最佳实践，而是通过在Go中编写一个简单的示例来介绍这两种架构和设计模式，它为构建基于微服务的分布式系统提供了解决方案，以便处理事务和数据。
+微服务中最难的部分：数据和事务 从未在分布式系统上工作的人一直误解微服务只能在Docker容器中运行服务并使用Kubernetes进行编排， 在我的国家，印度，很多人一直在提供关于微服务的企业培训和指导，有两个误解：微服务只是用Kubernetes编排容器，或者只是在Netflix OSS中使用Spring Boot框架。 但实际上，微服务是一种分布式系统架构模式，它完全用于构建高度可扩展和可演化的软件系统的功能分解。 简而言之，微服务是一种协同工作的小型自治服务。
+数据分散在微服务的多个数据库中 分解微服务的一种常用做法是针对有界上下文来设计每个微服务，这是领域驱动设计(DDD)中的中心模式，通过将大的域模型划分为多个不同的逻辑域，将业务问题分解到各个子域的有界上下文中。单个有界上下文可以通过一个或多个聚合进行事务。因为我们通常针对每个有界上下文构建微服务，所以我们通常为每个微服务使用单独的数据库，每个微服务看起来像一个独立的系统。
+因为我们将单体系统分解成几个自治服务，所以数据会分散在各个微服务所对应的几个数据库中。这使您的应用程序和体系结构变得非常复杂。 例如，业务事务可能跨越多个微服务。 假设您构建了一个带有微服务的电子商务系统，其中下订单最初将由一个微服务——OrderService处理，然后支付处理可能由另一个服务——PaymentService完成，依此类推。 另一个挑战是从多个数据库查询数据。 使用单体(monolithic)数据库，您可以轻松地从数据库中执行连接查询。 在微服务中，由于单体数据库作为功能组件被分解到多个数据库中，因此不能简单地执行连接查询，必须要从多个数据库中获取数据。
+使用EventSourcing和CQRS构建事件驱动的微服务 为了解决微服务的实际挑战，事件驱动的、反应式的系统在领域驱动设计中结合使用是一个很好的办法。因此，我强烈建议使用EventSourcing，这是以事件为中心的架构，通过编写各种事件来构建应用程序状态。
+EventSourcing: 使用不可变日志记录事件变化的存储 EventSourcing通过不可变的日志存储事件，其中每条日志（代表对某个对象的更改）表示应用程序的状态。事件存储就像版本控制系统，在微服务架构中，我们可以将聚合操作通过一系列的事件进行持久化存储，事件就是事实，代表系统中发生的一些行为。这些是不可变的，无法更改或撤销的。电子商务系统中的事件包括OrderCreated, PaymentDebited, OrderApproved, OrderRejected, OrderShipped, OrderDelivered等。
+在您的EventSourcing架构中，当您从一个微服务中发布一个事件，其它微服务可以订阅这个事件并另一组事件。有时，可以将EventSourcing与Unix管道操作进行比较。 基于微服务的系统中的单个事务可以跨越多个微服务，其中我们可以通过一系列事件构建反应式微服务来执行事务。聚合操作的每个状态更改都可以视为事件，这是系统的不可变事实。
+使用CQRS构建聚合视图的查询模型 当您使用EventSourcing将一系列事件进行持久化时，您可能需要一种架构方法来解决对微服务的查询，因为写模型(Commands)只是一个事件存储。一种新的架构——命令查询职责分离(Command Query Responsibility Segregation，CQRS)是实现微服务查询的理想模式。顾名思义，CQRS将应用程序划分为两个部分：执行更改聚合状态的操作的命令，以及为聚合视图提供查询模型的查询。虽然CQRS是一种独立的架构模式，但我们经常使用EventSourcing作为命令模型，我们也可以为写操作和查询操作提供不同的数据库。这还允许您通过将非规范化数据集加载到读取模型的数据存储中来创建高性能的查询模型。
+Go语言的EventSourcing和CQRS的示例——使用gRPC, NATS Streaming和CockroachDB等技术 示例的代码可以在此处获得:https://github.com/shijuvar/go-distributed-sys。
+为了方便理解，我简化了概念并提供了一个示例，展示如何使用gRPC，NATS等技术构建分布式系统。
+NATS Streaming用于消息传递 在EventSourcing架构中，当您从一个微服务中发布一个事件时，其他微服务可以对这些事件做出反应，并在执行自己的本地事务后发布另一组事件。基于微服务的系统中的单个事务可以跨越多个微服务，其中我们可以通过一系列的事件来执行事务。每个聚合状态的更改都可以视为一系列的事件，这是关于系统的不可变事实。为了发布事件以让其他微服务知道系统中发生了某些事情，我们需要使用消息传递系统。在此示例中，我们使用NATS Steraming Server作为事件流系统来构建事件驱动的微服务。事件驱动的反应式架构是构建大规模可扩展微服务的架构方法的绝佳选择。如果您对NATS和NATS Streaming不熟悉，请查看我关于基本NATS的文章这里和NATS Streaming 在这里。我认为NATS是构建分布式系统的神经系统，我一直致力于Go生态系统。
+gRPC用于构建APIs 在示例中，事件存储提供了一个API去执行命令，这是一个基于gRPC的API。gRPC是一个高性能、开源的远程过程调用框架，可以在任何地方运行。它使Client和Server能够透明地进行通信，并使构建连接系统更加容易。gRPC被广泛称为微服务中的通信协议。如果您通过API在微服务之间进行通信，那么gRPC是很好地选择，如果您不了解gRPC，可以查看我的文章。
+示例演示 下图是示例代码的结构：
+这是代码的架构图：
+这是示例中的基本工作流程：
+ 客户端应用程序将订单发布到HTTP API。
+ 一个HTTP API(OrderService)接收的命令，然后使用gRPC API创建一个事件，通过一个命令将事件存储到Event Store，存储的是事件的不可变的日志。
+ Event Store通过API执行命令，然后向NATS Streaming服务器发布order-created事件，以便让其他服务知道创建了一个事件。</description>
     </item>
     
   </channel>
