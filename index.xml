@@ -6,10 +6,23 @@
     <description>Recent content on CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Oct 2018 17:59:31 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Oct 2018 00:04:06 +0800</lastBuildDate>
     
 	<atom:link href="https://caas-one.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-10-07)</title>
+      <link>https://caas-one.github.io/post/news.caas.one/posts/2018-10-07-caasone-daily-news/</link>
+      <pubDate>Sun, 07 Oct 2018 00:04:06 +0800</pubDate>
+      
+      <guid>https://caas-one.github.io/post/news.caas.one/posts/2018-10-07-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181007)  有赞容器化实践 http://dockone.io/article/8271 Kubernetes Local Persistent Volume源码分析 https://my.oschina.net/jxcdwangtao/blog/2050538 (译)Knative：在 Kubernetes 上构建可移植 Serverless 平台 https://mp.weixin.qq.com/s/-MSwqEiNkwV2hiTMISlZfA 在个人的项目中使用Kubernetes http://www.doxsey.net/blog/kubernetes--the-surprisingly-affordable-platform-for-personal-projects 将Kubeadm单Master集群平滑升级至HA Master集群 https://www.kubernetes.org.cn/4594.html  编辑：yulibaozi
+地址：http://k8s.today/
+[容器时代志愿编辑招募] https://mp.weixin.qq.com/s/BVBzWx_u1xfwSZGTO-6qlg
+其他 1、欢迎将自己的博文转载到公众号进一步推广
+2、想翻译文章的同学现在就可开始</description>
+    </item>
     
     <item>
       <title>技术日报(2018-10-06)</title>
@@ -17,9 +30,18 @@
       <pubDate>Fri, 05 Oct 2018 17:59:31 +0800</pubDate>
       
       <guid>https://caas-one.github.io/post/news.caas.one/posts/2018-10-06-caasone-daily-news/</guid>
-      <description>[容器时代]技术日报(20181006) 1. KubeDirector: The easy way to run complex stateful applications on Kubernetes: https://kubernetes.io/blog/page/2/ 2. Why You Should Not Neglect Your Developer’s Kubernetes Clusters: https://itnext.io/why-you-should-not-neglect-your-developers-kubernetes-clusters-a658c8ca0e78 3. 容器镜像安全概述: http://blog.nsfocus.net/docker-mirror-security/ 4. Kubernetes最佳实践：优雅的终止: https://wilhelmguo.tk/blog/post/william/Kubernetes%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%9A%E4%BC%98%E9%9B%85%E7%9A%84%E7%BB%88%E6%AD%A2 5. We’re open-sourcing etcdadm! Here’s what it means for Kubernetes in production: https://platform9.com/blog/were-open-sourcing-etcdadm-heres-what-it-means-for-kubernetes-in-production/
-编辑：@wujiandong 地址：http://k8s.today/ [容器时代志愿编辑招募] https://mp.weixin.qq.com/s/BVBzWx_u1xfwSZGTO-6qlg
-其他 1、欢迎将自己的博文转载到公众号进一步推广 2、想翻译文章的同学现在就可开始</description>
+      <description>[容器时代]技术日报(20181006)
+ KubeDirector: The easy way to run complex stateful applications on Kubernetes: https://kubernetes.io/blog/page/2/
+ Why You Should Not Neglect Your Developer’s Kubernetes Clusters: https://itnext.io/why-you-should-not-neglect-your-developers-kubernetes-clusters-a658c8ca0e78
+ 容器镜像安全概述: http://blog.nsfocus.net/docker-mirror-security/
+ Kubernetes最佳实践：优雅的终止: https://wilhelmguo.tk/blog/post/william/Kubernetes%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5%EF%BC%9A%E4%BC%98%E9%9B%85%E7%9A%84%E7%BB%88%E6%AD%A2
+ We’re open-sourcing etcdadm! Here’s what it means for Kubernetes in production: https://platform9.com/blog/were-open-sourcing-etcdadm-heres-what-it-means-for-kubernetes-in-production/
+  编辑：@wujiandong
+地址：http://k8s.today/
+[容器时代志愿编辑招募] https://mp.weixin.qq.com/s/BVBzWx_u1xfwSZGTO-6qlg
+其他
+1、欢迎将自己的博文转载到公众号进一步推广
+2、想翻译文章的同学现在就可开始</description>
     </item>
     
     <item>
@@ -221,6 +243,25 @@ gRPC用于构建APIs 在示例中，事件存储提供了一个API去执行命�
  客户端应用程序将订单发布到HTTP API。
  一个HTTP API(OrderService)接收的命令，然后使用gRPC API创建一个事件，通过一个命令将事件存储到Event Store，存储的是事件的不可变的日志。
  Event Store通过API执行命令，然后向NATS Streaming服务器发布order-created事件，以便让其他服务知道创建了一个事件。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://caas-one.github.io/post/news.caas.one/translation/diving-deep-into-the-golang-channels/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://caas-one.github.io/post/news.caas.one/translation/diving-deep-into-the-golang-channels/readme/</guid>
+      <description> 深入理解*Golang*的Channel *Golang*中的并发远不止是语法：
+ 这是一种设计模式
+ 一种设计模式，它是处理并发是常见问题的可重复解决方案，因为
+ 并发需要同步
+ *Go*使用一个名为*CSP(Communicating Sequential process)*的并发模型，通过*Channel*实现这种同步模式。它的核心核心哲学是：
+ 不要通过共享内存来通信；相反，通过通信来共享内存
+ 但*Go*也相信你做正确的事情，所以本文的其余部分将尝试打开*Go*哲学的大门以及展示*Channel*的——使用一个队列实现*channel*的效果。
+Channel func goRoutineA(a &amp;lt;-chan int) { val := &amp;lt;-a fmt.Println(&amp;quot;goRoutineA received the data&amp;quot;, val) } func main() { ch := make(chan int) go goRoutineA(ch) time.Sleep(time.Second * 1) }  在接收或者发送数据时，*Go*中的*Channel*的责任是使*Goroutine*在*Channel*上阻塞。
+如果不熟悉*Go Scheduler*，请阅读有关它的介绍:https://morsmachine.dk/go-scheduler
+*Channel*的结构 在*Go*中，*Channel*的数据结构是*Goroutine*之间消息传递的基础，所以，我们看一下在创建*channel*结构体时发生了什么：
+ch := make（chan int，3）  </description>
     </item>
     
   </channel>
