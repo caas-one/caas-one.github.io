@@ -111,6 +111,14 @@ func main() {
 
 <p><img src="images/makechan.png" alt="" /></p>
 
+<p>这意味着什么？如何获得*channel*的数据结构？在进一步讨论之前，我们先看看几个重要的数据结构：</p>
+
+<h2 id="hchan-结构"><strong>hchan</strong>结构</h2>
+
+<p>当我们编写<code>make(chan int, 2)</code>时，<strong>channel</strong>将从*hchan*结构创建，它的结构如下：</p>
+
+<p><img src="images/hchanstruct.png" alt="hchan和waitq结构体" /></p>
+
 </div>
 
 

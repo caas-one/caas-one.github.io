@@ -60,46 +60,46 @@
 <blockquote>
 <p>导读：</p>
 
-<p>本文的主要目的是通过<code>EventSourcing</code>和<code>CQRS</code>来构建事件驱动的微服务。构建真实世界的微服务是非常复杂的，其中最困难的部分是处理分散在各个微服务拥有的几个数据库中的数据。这使得构建跨多个微服务的业务事务变得非常复杂，并且查询数据时对多个数据库无法进行关联查询。因此，您必须使用一些架构方法从现实世界的角度构建微服务，您可以考虑使用事件驱动的体系结构，如<code>EventSourcing</code>。<code>EventSourcing</code>架构最好与<code>CQRS</code>结合使用。虽然本文是基于<code>go</code>语言实现，但代码简单清晰，清楚的介绍了<code>EventSourcing</code>和<code>CQRS</code>如何结合使用，其它语言的工程师也可阅读，相信会有帮助。</p>
+<p>本文的主要目的是通过*EventSourcing*和*CQRS*来构建事件驱动的微服务。构建真实世界的微服务是非常复杂的，其中最困难的部分是处理分散在各个微服务拥有的几个数据库中的数据。这使得构建跨多个微服务的业务事务变得非常复杂，并且查询数据时对多个数据库无法进行关联查询。因此，您必须使用一些架构方法从现实世界的角度构建微服务，您可以考虑使用事件驱动的体系结构，如*EventSourcing*。*EventSourcing*架构最好与*CQRS*结合使用。虽然本文是基于*go*语言实现，但代码简单清晰，清楚的介绍了*EventSourcing*和*CQRS*如何结合使用，其它语言的工程师也可阅读，相信会有帮助。</p>
 </blockquote>
 
-<p>在这篇文章中，我将演示<code>Go</code>中的一个简单的<code>EventSourcing/CQRS</code>示例，演示如何解决基于微服务的分布式系统的实际挑战。请记住，这篇文章的目的不是介绍EventSourcing和CQRS的最佳实践，而是通过在Go中编写一个简单的示例来介绍这两种架构和设计模式，它为构建基于微服务的分布式系统提供了解决方案，以便处理事务和数据。</p>
+<p>在这篇文章中，我将演示*Go*中的一个简单的*EventSourcing/CQRS*示例，演示如何解决基于微服务的分布式系统的实际挑战。请记住，这篇文章的目的不是介绍EventSourcing和CQRS的最佳实践，而是通过在Go中编写一个简单的示例来介绍这两种架构和设计模式，它为构建基于微服务的分布式系统提供了解决方案，以便处理事务和数据。</p>
 
 <h3 id="微服务中最难的部分-数据和事务">微服务中最难的部分：数据和事务</h3>
 
 <hr />
 
-<p>从未在分布式系统上工作的人一直误解微服务只能在<code>Docker</code>容器中运行服务并使用<code>Kubernetes</code>进行编排， 在我的国家，印度，很多人一直在提供关于微服务的企业培训和指导，有两个误解：微服务只是用<code>Kubernetes</code>编排容器，或者只是在<code>Netflix OSS</code>中使用<code>Spring Boot</code>框架。 但实际上，微服务是一种分布式系统架构模式，它完全用于构建高度可扩展和可演化的软件系统的功能分解。 简而言之，微服务是一种协同工作的小型自治服务。</p>
+<p>从未在分布式系统上工作的人一直误解微服务只能在*Docker*容器中运行服务并使用*Kubernetes*进行编排， 在我的国家，印度，很多人一直在提供关于微服务的企业培训和指导，有两个误解：微服务只是用*Kubernetes*编排容器，或者只是在*Netflix OSS*中使用*Spring Boot*框架。 但实际上，微服务是一种分布式系统架构模式，它完全用于构建高度可扩展和可演化的软件系统的功能分解。 简而言之，微服务是一种协同工作的小型自治服务。</p>
 
 <h4 id="数据分散在微服务的多个数据库中">数据分散在微服务的多个数据库中</h4>
 
 <hr />
 
-<p>分解微服务的一种常用做法是针对有界上下文来设计每个微服务，这是<em>领域驱动设计</em><code>(DDD)</code>中的中心模式，通过将大的域模型划分为多个不同的逻辑域，将业务问题分解到各个子域的有界上下文中。单个有界上下文可以通过一个或多个聚合进行事务。因为我们通常针对每个有界上下文构建微服务，所以我们通常为每个微服务使用单独的数据库，每个微服务看起来像一个独立的系统。</p>
+<p>分解微服务的一种常用做法是针对有界上下文来设计每个微服务，这是*领域驱动设计**(DDD)*中的中心模式，通过将大的域模型划分为多个不同的逻辑域，将业务问题分解到各个子域的有界上下文中。单个有界上下文可以通过一个或多个聚合进行事务。因为我们通常针对每个有界上下文构建微服务，所以我们通常为每个微服务使用单独的数据库，每个微服务看起来像一个独立的系统。</p>
 
-<p>因为我们将单体系统分解成几个自治服务，所以数据会分散在各个微服务所对应的几个数据库中。这使您的应用程序和体系结构变得非常复杂。 例如，业务事务可能跨越多个微服务。 假设您构建了一个带有微服务的电子商务系统，其中下订单最初将由一个微服务——<code>OrderService</code>处理，然后支付处理可能由另一个服务——<code>PaymentService</code>完成，依此类推。 另一个挑战是从多个数据库查询数据。 使用单体(<code>monolithic</code>)数据库，您可以轻松地从数据库中执行连接查询。 在微服务中，由于单体数据库作为功能组件被分解到多个数据库中，因此不能简单地执行连接查询，必须要从多个数据库中获取数据。</p>
+<p>因为我们将单体系统分解成几个自治服务，所以数据会分散在各个微服务所对应的几个数据库中。这使您的应用程序和体系结构变得非常复杂。 例如，业务事务可能跨越多个微服务。 假设您构建了一个带有微服务的电子商务系统，其中下订单最初将由一个微服务——*OrderService*处理，然后支付处理可能由另一个服务——*PaymentService*完成，依此类推。 另一个挑战是从多个数据库查询数据。 使用单体(<em>monolithic</em>)数据库，您可以轻松地从数据库中执行连接查询。 在微服务中，由于单体数据库作为功能组件被分解到多个数据库中，因此不能简单地执行连接查询，必须要从多个数据库中获取数据。</p>
 
-<h3 id="使用-eventsourcing-和-cqrs-构建事件驱动的微服务">使用<code>EventSourcing</code>和<code>CQRS</code>构建事件驱动的微服务</h3>
-
-<hr />
-
-<p>为了解决微服务的实际挑战，事件驱动的、反应式的系统在领域驱动设计中结合使用是一个很好的办法。因此，我强烈建议使用<code>EventSourcing</code>，这是以事件为中心的架构，通过编写各种事件来构建应用程序状态。</p>
-
-<h4 id="eventsourcing-使用不可变日志记录事件变化的存储"><code>EventSourcing</code>: 使用不可变日志记录事件变化的存储</h4>
+<h3 id="使用-eventsourcing-和-cqrs-构建事件驱动的微服务">使用*EventSourcing*和*CQRS*构建事件驱动的微服务</h3>
 
 <hr />
 
-<p><code>EventSourcing</code>通过不可变的日志存储事件，其中每条日志（代表对某个对象的更改）表示应用程序的状态。事件存储就像版本控制系统，在微服务架构中，我们可以将聚合操作通过一系列的事件进行持久化存储，事件就是事实，代表系统中发生的一些行为。这些是不可变的，无法更改或撤销的。电子商务系统中的事件包括<code>OrderCreated</code>, <code>PaymentDebited</code>, <code>OrderApproved</code>, <code>OrderRejected</code>, <code>OrderShipped</code>, <code>OrderDelivered</code>等。</p>
+<p>为了解决微服务的实际挑战，事件驱动的、反应式的系统在领域驱动设计中结合使用是一个很好的办法。因此，我强烈建议使用*EventSourcing*，这是以事件为中心的架构，通过编写各种事件来构建应用程序状态。</p>
 
-<p>在您的<code>EventSourcing</code>架构中，当您从一个微服务中发布一个事件，其它微服务可以订阅这个事件并另一组事件。有时，可以将<code>EventSourcing</code>与Unix管道操作进行比较。 基于微服务的系统中的单个事务可以跨越多个微服务，其中我们可以通过一系列事件构建反应式微服务来执行事务。聚合操作的每个状态更改都可以视为事件，这是系统的不可变事实。</p>
-
-<h4 id="使用-cqrs-构建聚合视图的查询模型">使用<code>CQRS</code>构建聚合视图的查询模型</h4>
+<h4 id="eventsourcing-使用不可变日志记录事件变化的存储"><em>EventSourcing</em>: 使用不可变日志记录事件变化的存储</h4>
 
 <hr />
 
-<p>当您使用<code>EventSourcing</code>将一系列事件进行持久化时，您可能需要一种架构方法来解决对微服务的查询，因为写模型(<code>Commands</code>)只是一个事件存储。一种新的架构——命令查询职责分离(<code>Command Query Responsibility Segregation，CQRS</code>)是实现微服务查询的理想模式。顾名思义，<code>CQRS</code>将应用程序划分为两个部分：执行更改聚合状态的操作的命令，以及为聚合视图提供查询模型的查询。虽然<code>CQRS</code>是一种独立的架构模式，但我们经常使用<code>EventSourcing</code>作为命令模型，我们也可以为写操作和查询操作提供不同的数据库。这还允许您通过将非规范化数据集加载到读取模型的数据存储中来创建高性能的查询模型。</p>
+<p>*EventSourcing*通过不可变的日志存储事件，其中每条日志（代表对某个对象的更改）表示应用程序的状态。事件存储就像版本控制系统，在微服务架构中，我们可以将聚合操作通过一系列的事件进行持久化存储，事件就是事实，代表系统中发生的一些行为。这些是不可变的，无法更改或撤销的。电子商务系统中的事件包括<em>OrderCreated</em>, <em>PaymentDebited</em>, <em>OrderApproved</em>, <em>OrderRejected</em>, <em>OrderShipped</em>, *OrderDelivered*等。</p>
 
-<h3 id="go-语言的-eventsourcing-和-cqrs-的示例-使用grpc-nats-streaming和cockroachdb等技术"><code>Go</code>语言的<code>EventSourcing</code>和<code>CQRS</code>的示例——使用gRPC, NATS Streaming和CockroachDB等技术</h3>
+<p>在您的*EventSourcing*架构中，当您从一个微服务中发布一个事件，其它微服务可以订阅这个事件并另一组事件。有时，可以将*EventSourcing*与Unix管道操作进行比较。 基于微服务的系统中的单个事务可以跨越多个微服务，其中我们可以通过一系列事件构建反应式微服务来执行事务。聚合操作的每个状态更改都可以视为事件，这是系统的不可变事实。</p>
+
+<h4 id="使用-cqrs-构建聚合视图的查询模型">使用*CQRS*构建聚合视图的查询模型</h4>
+
+<hr />
+
+<p>当您使用*EventSourcing*将一系列事件进行持久化时，您可能需要一种架构方法来解决对微服务的查询，因为写模型(<em>Commands</em>)只是一个事件存储。一种新的架构——命令查询职责分离(<em>Command Query Responsibility Segregation，CQRS</em>)是实现微服务查询的理想模式。顾名思义，*CQRS*将应用程序划分为两个部分：执行更改聚合状态的操作的命令，以及为聚合视图提供查询模型的查询。虽然*CQRS*是一种独立的架构模式，但我们经常使用*EventSourcing*作为命令模型，我们也可以为写操作和查询操作提供不同的数据库。这还允许您通过将非规范化数据集加载到读取模型的数据存储中来创建高性能的查询模型。</p>
+
+<h3 id="go-语言的-eventsourcing-和-cqrs-的示例-使用grpc-nats-streaming和cockroachdb等技术">*Go*语言的*EventSourcing*和*CQRS*的示例——使用gRPC, NATS Streaming和CockroachDB等技术</h3>
 
 <hr />
 
@@ -107,17 +107,17 @@
 
 <p>为了方便理解，我简化了概念并提供了一个示例，展示如何使用gRPC，NATS等技术构建分布式系统。</p>
 
-<h4 id="nats-streaming-用于消息传递"><code>NATS Streaming</code>用于消息传递</h4>
+<h4 id="nats-streaming-用于消息传递">*NATS Streaming*用于消息传递</h4>
 
 <hr />
 
-<p>在<code>EventSourcing</code>架构中，当您从一个微服务中发布一个事件时，其他微服务可以对这些事件做出反应，并在执行自己的本地事务后发布另一组事件。基于微服务的系统中的单个事务可以跨越多个微服务，其中我们可以通过一系列的事件来执行事务。每个聚合状态的更改都可以视为一系列的事件，这是关于系统的不可变事实。为了发布事件以让其他微服务知道系统中发生了某些事情，我们需要使用消息传递系统。在此示例中，我们使用<code>NATS Steraming Server</code>作为事件流系统来构建事件驱动的微服务。事件驱动的反应式架构是构建大规模可扩展微服务的架构方法的绝佳选择。如果您对<code>NATS</code>和<code>NATS Streaming</code>不熟悉，请查看我关于基本<code>NATS</code>的文章这里和<code>NATS Streaming</code> 在<a href="https://medium.com/@shijuvar/building-distributed-systems-and-microservices-in-go-with-nats-streaming-d8b4baa633a2">这里</a>。我认为<code>NATS</code>是构建分布式系统的神经系统，我一直致力于Go生态系统。</p>
+<p>在*EventSourcing*架构中，当您从一个微服务中发布一个事件时，其他微服务可以对这些事件做出反应，并在执行自己的本地事务后发布另一组事件。基于微服务的系统中的单个事务可以跨越多个微服务，其中我们可以通过一系列的事件来执行事务。每个聚合状态的更改都可以视为一系列的事件，这是关于系统的不可变事实。为了发布事件以让其他微服务知道系统中发生了某些事情，我们需要使用消息传递系统。在此示例中，我们使用*NATS Steraming Server*作为事件流系统来构建事件驱动的微服务。事件驱动的反应式架构是构建大规模可扩展微服务的架构方法的绝佳选择。如果您对*NATS*和*NATS Streaming*不熟悉，请查看我关于基本*NATS*的文章这里和<em>NATS Streaming</em> 在<a href="https://medium.com/@shijuvar/building-distributed-systems-and-microservices-in-go-with-nats-streaming-d8b4baa633a2">这里</a>。我认为*NATS*是构建分布式系统的神经系统，我一直致力于Go生态系统。</p>
 
-<h4 id="grpc-用于构建-apis"><code>gRPC</code>用于构建<code>APIs</code></h4>
+<h4 id="grpc-用于构建-apis">*gRPC*用于构建<em>APIs</em></h4>
 
 <hr />
 
-<p>在示例中，事件存储提供了一个<code>API</code>去执行命令，这是一个基于<code>gRPC</code>的<code>API</code>。<code>gRPC</code>是一个高性能、开源的远程过程调用框架，可以在任何地方运行。它使<code>Client</code>和<code>Server</code>能够透明地进行通信，并使构建连接系统更加容易。<code>gRPC</code>被广泛称为微服务中的通信协议。如果您通过<code>API</code>在微服务之间进行通信，那么<code>gRPC</code>是很好地选择，如果您不了解<code>gRPC</code>，可以查看我的<a href="https://medium.com/@shijuvar/building-high-performance-apis-in-go-using-grpc-and-protocol-buffers-2eda5b80771b">文章</a>。</p>
+<p>在示例中，事件存储提供了一个*API*去执行命令，这是一个基于*gRPC*的*API*。*gRPC*是一个高性能、开源的远程过程调用框架，可以在任何地方运行。它使*Client*和*Server*能够透明地进行通信，并使构建连接系统更加容易。*gRPC*被广泛称为微服务中的通信协议。如果您通过*API*在微服务之间进行通信，那么*gRPC*是很好地选择，如果您不了解*gRPC*，可以查看我的<a href="https://medium.com/@shijuvar/building-high-performance-apis-in-go-using-grpc-and-protocol-buffers-2eda5b80771b">文章</a>。</p>
 
 <h4 id="示例演示">示例演示</h4>
 
@@ -136,26 +136,26 @@
 <ol>
 <li><p>客户端应用程序将订单发布到HTTP API。</p></li>
 
-<li><p>一个<code>HTTP API(OrderService)</code>接收的命令，然后使用<code>gRPC API</code>创建一个事件，通过一个命令将事件存储到<code>Event Store</code>，存储的是事件的不可变的日志。</p></li>
+<li><p>一个*HTTP API(OrderService)*接收的命令，然后使用*gRPC API*创建一个事件，通过一个命令将事件存储到*Event Store*，存储的是事件的不可变的日志。</p></li>
 
-<li><p><code>Event Store</code>通过<code>API</code>执行命令，然后向<code>NATS Streaming</code>服务器发布<code>order-created</code>事件，以便让其他服务知道创建了一个事件。</p></li>
+<li><p>*Event Store*通过*API*执行命令，然后向*NATS Streaming*服务器发布*order-created*事件，以便让其他服务知道创建了一个事件。</p></li>
 
-<li><p>付款服务（<code>PaymentService</code>）订阅事件<code>order-created</code>，然后进行付款，然后通过<code>Event Store API</code>创建另一个事件<code>order-payment-debited</code>。</p></li>
+<li><p>付款服务（*PaymentService*）订阅事件*order-created*，然后进行付款，然后通过*Event Store API*创建另一个事件*order-payment-debited*。</p></li>
 
-<li><p>查询服务（orderquery-store1和orderquery-store2作为队列订阅者）也订阅了<code>order-created</code>事件，该事件同步数据模型以提供查询视图的聚合状态。</p></li>
+<li><p>查询服务（orderquery-store1和orderquery-store2作为队列订阅者）也订阅了*order-created*事件，该事件同步数据模型以提供查询视图的聚合状态。</p></li>
 
-<li><p><code>Event Store API</code>在事件存储上执行命令以创建事件<code>order-payment-debited</code>，并向<code>NATS Streaming</code>服务器发布事件，以便让其他服务知道付款已被记入借方。</p></li>
+<li><p>*Event Store API*在事件存储上执行命令以创建事件*order-payment-debited*，并向*NATS Streaming*服务器发布事件，以便让其他服务知道付款已被记入借方。</p></li>
 
 <li><p>餐厅服务（RestaurantService）最终批准订单。</p></li>
 
-<li><p><code>Distributed Saga</code>管理分布式事务并在失败时进行无效事务回滚（暂未实现）</p></li>
+<li><p>*Distributed Saga*管理分布式事务并在失败时进行无效事务回滚（暂未实现）</p></li>
 </ol>
 
-<h4 id="eventsourcing-的事件存储"><code>EventSourcing</code>的事件存储</h4>
+<h4 id="eventsourcing-的事件存储">*EventSourcing*的事件存储</h4>
 
 <hr />
 
-<p>这是消息<code>Event</code>的结构体定义。示例中的每个状态更改都被视为事件，并在<code>Event Store</code>中执行命令。</p>
+<p>这是消息*Event*的结构体定义。示例中的每个状态更改都被视为事件，并在*Event Store*中执行命令。</p>
 
 <p><strong>清单1</strong>. 消息的结构协议缓冲区中的事件:</p>
 
@@ -169,7 +169,7 @@
 }
 </code></pre>
 
-<p><code>Event Store</code>提供了一个<code>gRPC API</code>用于保存事件。这是<code>Event Store</code>实现中的基本代码块：</p>
+<p>*Event Store*提供了一个*gRPC API*用于保存事件。这是*Event Store*实现中的基本代码块：</p>
 
 <p><strong>清单2</strong>. gRPC服务器中的基本实现:</p>
 
@@ -199,17 +199,17 @@ func publishEvent(component *natsutil.StreamingComponent, event *pb.Event) {
 }
 </code></pre>
 
-<p>每当新事件通过其<code>gRPC API</code>作为不可变日志持久化存储到<code>Event Store</code>中时，它就会通过<code>NATS Streaming</code>服务器发布事件，让其他微服务器知道新事件已发布，因此所有用户微服务都可以对这些事件做出反应。在此示例中，事件从<code>Event Store API</code>本身发布到消息传递系统(<code>NATS Streaming</code>)中。在实际场景中，它可能来自单个微服务，也可能来自协调单个业务事务跨越多个微服务的<code>Distributed Saga</code>。</p>
+<p>每当新事件通过其*gRPC API*作为不可变日志持久化存储到*Event Store*中时，它就会通过*NATS Streaming*服务器发布事件，让其他微服务器知道新事件已发布，因此所有用户微服务都可以对这些事件做出反应。在此示例中，事件从*Event Store API*本身发布到消息传递系统(<em>NATS Streaming</em>)中。在实际场景中，它可能来自单个微服务，也可能来自协调单个业务事务跨越多个微服务的*Distributed Saga*。</p>
 
-<p><img src="images/distribute saga.png" alt="Distributed Saga" /></p>
+<p><img src="images/distribute-saga.png" alt="Distributed Saga" /></p>
 
 <h4 id="订阅用于构建反应式微服务的事件">订阅用于构建反应式微服务的事件</h4>
 
 <hr />
 
-<p>当您将事件持久存储到<code>Event Store</code>中时，它通过<code>NATS Streaming</code>发布新事件，如果您的微服务对这些事件感兴趣，则微服务可以对这些事件进行订阅。在这里，我们使用<code>NATS Streaming</code>订阅事件。在此示例中，当创建<code>order-created</code> 事件时，<code>PaymentService</code>订阅该事件，并创建另一个名为<code>order-payment-debited</code>的事件。</p>
+<p>当您将事件持久存储到*Event Store*中时，它通过*NATS Streaming*发布新事件，如果您的微服务对这些事件感兴趣，则微服务可以对这些事件进行订阅。在这里，我们使用*NATS Streaming*订阅事件。在此示例中，当创建<em>order-created</em> 事件时，*PaymentService*订阅该事件，并创建另一个名为*order-payment-debited*的事件。</p>
 
-<p><strong>清单3</strong>. 对<code>order-created</code>事件做出反应的<code>NATS Streaming</code>订户客户端:</p>
+<p><strong>清单3</strong>. 对*order-created*事件做出反应的*NATS Streaming*订户客户端:</p>
 
 <pre><code class="language-golang">const (
    clusterID = &quot;test-cluster&quot;
@@ -272,9 +272,9 @@ func main() {
 
 <hr />
 
-<p>在<code>CQRS</code>中，它将应用程序分为两部分：命令和查询。这里的命令是使用<code>EventSourcing</code>实现的，<code>EventSourcing</code>使用不可变事件日志的<code>Event Store</code>来构建应用程序状态。为了创建查询模型，我们还可以在执行命令操作时订阅事件。在这个例子中，服务<code>orderquery-store 1</code>和<code>orderquery-store2</code>通过<code>QueueGroup</code>订阅，通过<code>NATS Streaming</code>订阅事件<code>order-created</code>。<code>NATS</code>中的<code>QueueGroup</code>订阅服务允许您在不进行任何配置的情况下实现负载均衡。</p>
+<p>在*CQRS*中，它将应用程序分为两部分：命令和查询。这里的命令是使用*EventSourcing*实现的，*EventSourcing*使用不可变事件日志的*Event Store*来构建应用程序状态。为了创建查询模型，我们还可以在执行命令操作时订阅事件。在这个例子中，服务*orderquery-store 1*和*orderquery-store2*通过*QueueGroup*订阅，通过*NATS Streaming*订阅事件*order-created*。*NATS*中的*QueueGroup*订阅服务允许您在不进行任何配置的情况下实现负载均衡。</p>
 
-<p><strong>清单4</strong>. 用于同步查询模型的<code>NATS Streaming QueueGroup</code>订户客户端:</p>
+<p><strong>清单4</strong>. 用于同步查询模型的*NATS Streaming QueueGroup*订户客户端:</p>
 
 <pre><code class="language-golang">const (
    clusterID  = &quot;test-cluster&quot;
@@ -317,15 +317,15 @@ func main() {
 }
 </code></pre>
 
-<p>这里，每当发布<code>order-created</code>事件时，订阅者根据事件执行一些逻辑并进行数据同步，通过将数据保存到数据存储中来创建聚合的非规范化视图，它用于CQRS架构中的查询模型。</p>
+<p>这里，每当发布*order-created*事件时，订阅者根据事件执行一些逻辑并进行数据同步，通过将数据保存到数据存储中来创建聚合的非规范化视图，它用于CQRS架构中的查询模型。</p>
 
-<h4 id="使用-cockroachdb-持久存储">使用<code>CockroachDB</code>持久存储</h4>
+<h4 id="使用-cockroachdb-持久存储">使用*CockroachDB*持久存储</h4>
 
 <hr />
 
-<p>使用<code>CQRS</code>的一个主要好处是，您可以为写入操作和查询操作使用不同的数据模型，因此您还可以使用不同的数据库技术。在此示例演示中，我们使用<code>CockroachDB</code>执行命令和查询模型。<code>CockroachDB</code>是一个分布式数据库，用于构建可在灾难中恢复的全球可扩展云服务。在<code>Go</code>应用程序中，您可以使用类似于<code>PostgreSQL</code>的驱动程序（如<code>github.com/lib/pq</code>）来处理<code>SQL</code> 。如果您正在使用<code>package database/sql</code>进行事务，请使用<code>CockroachDB</code>的官方库<code>github.com/cockroachdb/cockroach-go/crdb</code>。在示例演示中，使用CockroachDB的持久性逻辑在代码的<code>store</code>包中实现。g官方包<code>crdb</code>的方法<code>ExecuteTx</code>可以帮助您将事务执行到<code>CockroachDB</code>中。</p>
+<p>使用*CQRS*的一个主要好处是，您可以为写入操作和查询操作使用不同的数据模型，因此您还可以使用不同的数据库技术。在此示例演示中，我们使用*CockroachDB*执行命令和查询模型。*CockroachDB*是一个分布式数据库，用于构建可在灾难中恢复的全球可扩展云服务。在*Go*应用程序中，您可以使用类似于*PostgreSQL*的驱动程序（如*github.com/lib/pq*）来处理<em>SQL</em> 。如果您正在使用*package database/sql*进行事务，请使用*CockroachDB*的官方库*github.com/cockroachdb/cockroach-go/crdb*。在示例演示中，使用CockroachDB的持久性逻辑在代码的*store*包中实现。g官方包*crdb*的方法*ExecuteTx*可以帮助您将事务执行到*CockroachDB*中。</p>
 
-<p><strong>清单5</strong>. 使用包<code>crdb</code>在<code>CockroachDB</code>中的事务实现:</p>
+<p><strong>清单5</strong>. 使用包*crdb*在*CockroachDB*中的事务实现:</p>
 
 <pre><code class="language-golang">func (store QueryStore) SyncOrderQueryModel(order pb.OrderCreateCommand) error {
 
@@ -345,11 +345,11 @@ return nil
 }
 </code></pre>
 
-<p>这是<code>Event Store</code>的不可变日志，用于创建最终的订单:</p>
+<p>这是*Event Store*的不可变日志，用于创建最终的订单:</p>
 
 <p><img src="images/sqlresult.png" alt="" /></p>
 
-<p><code>Event Store</code>的事件表有一个名为<code>eventdata</code>的字段，我们将整个事件数据作为<code>JSON</code>文档保存到该字段，它对构建应用程序状态以及构建查询视图很有用。</p>
+<p>*Event Store*的事件表有一个名为*eventdata*的字段，我们将整个事件数据作为*JSON*文档保存到该字段，它对构建应用程序状态以及构建查询视图很有用。</p>
 
 <h3 id="源代码">源代码</h3>
 
@@ -361,7 +361,7 @@ return nil
 
 <hr />
 
-<p>本文的主要目的是通过<code>EventSourcing</code>和<code>CQRS</code>来构建事件驱动的微服务。构建真实世界的微服务是非常复杂的，其中最困难的部分是处理分散在各个微服务拥有的几个数据库中的数据。这使得构建跨多个微服务的业务事务变得非常复杂，并且查询数据时对多个数据库无法进行关联查询。因此，您必须使用一些架构方法从现实世界的角度构建微服务，您可以考虑使用事件驱动的体系结构，如<code>EventSourcing</code>。<code>EventSourcing</code>架构最好与<code>CQRS</code>结合使用。</p>
+<p>本文的主要目的是通过*EventSourcing*和*CQRS*来构建事件驱动的微服务。构建真实世界的微服务是非常复杂的，其中最困难的部分是处理分散在各个微服务拥有的几个数据库中的数据。这使得构建跨多个微服务的业务事务变得非常复杂，并且查询数据时对多个数据库无法进行关联查询。因此，您必须使用一些架构方法从现实世界的角度构建微服务，您可以考虑使用事件驱动的体系结构，如*EventSourcing*。*EventSourcing*架构最好与*CQRS*结合使用。</p>
 
 </div>
 
