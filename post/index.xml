@@ -6,10 +6,28 @@
     <description>Recent content in Posts on CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Oct 2018 10:14:56 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 08 Oct 2018 10:40:03 +0800</lastBuildDate>
     
 	<atom:link href="https://caas-one.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-10-09)</title>
+      <link>https://caas-one.github.io/post/news.caas.one/posts/2018-10-09-caasone-daily-news/</link>
+      <pubDate>Mon, 08 Oct 2018 10:40:03 +0800</pubDate>
+      
+      <guid>https://caas-one.github.io/post/news.caas.one/posts/2018-10-09-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181009)  基于gRPC的健康检查机制：https://kubernetes.io/blog/2018/10/01/health-checking-grpc-servers-on-kubernetes/，pb协议定义：https://github.com/grpc/grpc/blob/v1.15.0/doc/health-checking.md
+ 在滚动升级中实现零宕机时间：https://medium.com/platformer-blog/enable-rolling-updates-in-kubernetes-with-zero-downtime-31d7ec388c81
+ Kubernetes add-ons让计算更高效：https://akomljen.com/kubernetes-add-ons-for-more-efficient-computing/
+ Knative的现状：https://medium.com/@grapesfrog/knative-whats-that-now-65041e585d3d
+ Istio流量管理实现机制深度解析：https://mp.weixin.qq.com/s/m_HhSCKB5sGso67nXxuEig
+  编辑：lth2015
+地址：http://k8s.today/
+[容器时代志愿编辑招募] https://mp.weixin.qq.com/s/BVBzWx_u1xfwSZGTO-6qlg
+其他 1、欢迎将自己的博文转载到公众号进一步推广
+2、想翻译文章的同学现在就可开始</description>
+    </item>
     
     <item>
       <title>技术日报(2018-10-08)</title>
