@@ -6,10 +6,23 @@
     <description>Recent content on CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 10 Oct 2018 07:52:04 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 11 Oct 2018 09:33:04 +0800</lastBuildDate>
     
 	<atom:link href="https://caas-one.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-10-11)</title>
+      <link>https://caas-one.github.io/post/news.caas.one/posts/2018-10-11-caasone-daily-news/</link>
+      <pubDate>Thu, 11 Oct 2018 09:33:04 +0800</pubDate>
+      
+      <guid>https://caas-one.github.io/post/news.caas.one/posts/2018-10-11-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181011)  Kubernetes(k8s)容器运行时(CRI)简介 https://www.kubernetes.org.cn/1079.html Kubernetes v1.12: Introducing RuntimeClass https://kubernetes.io/blog/2018/10/10/kubernetes-v1.12-introducing-runtimeclass/ Introducing Volume Snapshot Alpha for Kubernetes https://kubernetes.io/blog/2018/10/09/introducing-volume-snapshot-alpha-for-kubernetes/ Getting Started with Docker on Windows Server 2019 https://blog.sixeyed.com/getting-started-with-docker-on-windows-server-2019/ Improving the multi-team Kubernetes ingress experience with Heptio Contour 0.6 https://blog.heptio.com/improving-the-multi-team-kubernetes-ingress-experience-with-heptio-contour-0-6-55ae0c0cadef  编辑：@windghoul
+地址：http://k8s.today/
+[容器时代志愿编辑招募] https://mp.weixin.qq.com/s/BVBzWx_u1xfwSZGTO-6qlg [容器时代专属KubeCon福利] 点击链接领取-25%现金优惠☞ https://mp.weixin.qq.com/s/ARUF8fTKn3VUKxFrOShWBQ
+其他 1、欢迎将自己的博文转载到公众号进一步推广
+2、想翻译文章的同学现在就可开始</description>
+    </item>
     
     <item>
       <title>技术日报(2019-10-10)</title>
