@@ -6,10 +6,23 @@
     <description>Recent content in Posts on CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 12 Oct 2018 10:13:30 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 13 Oct 2018 12:27:22 +0800</lastBuildDate>
     
 	<atom:link href="https://caas-one.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-10-14)</title>
+      <link>https://caas-one.github.io/post/news.caas.one/posts/2018-10-14-caasone-daily-news/</link>
+      <pubDate>Sat, 13 Oct 2018 12:27:22 +0800</pubDate>
+      
+      <guid>https://caas-one.github.io/post/news.caas.one/posts/2018-10-14-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181014)  Service mesh data plane vs. control plane: https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc How to scale Microservices with Message Queues, Spring Boot, and Kubernetes: https://medium.freecodecamp.org/how-to-scale-microservices-with-message-queues-spring-boot-and-kubernetes-f691b7ba3acf Simplifying Microservices with Istio in Google Kubernetes Engine — Part I: https://medium.com/search?q=istio 基于 K8S 构建企业级 Serverless Container 平台的探索与实践: https://mp.weixin.qq.com/s/e97BQUYXa_-MT82Pql2TsQ 容器编排无法解决微服务的所有问题，你还需要服务网格: https://mp.weixin.qq.com/s/3YT0vsnkCLjObBh6IES39Q  编辑：@wbtlb
+地址：http://k8s.today/
+[容器时代志愿编辑招募] https://mp.weixin.qq.com/s/BVBzWx_u1xfwSZGTO-6qlg
+其他 1、欢迎将自己的博文转载到公众号进一步推广
+2、想翻译文章的同学现在就可开始</description>
+    </item>
     
     <item>
       <title>技术日报(2018-10-13)</title>
