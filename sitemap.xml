@@ -148,12 +148,6 @@
   </url>
   
   <url>
-    <loc>http://caas-one.github.io/</loc>
-    <lastmod>2018-10-17T15:03:04+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>http://caas-one.github.io/categories/</loc>
     <priority>0</priority>
   </url>
@@ -178,6 +172,12 @@
   <url>
     <loc>http://caas-one.github.io/categories/translation/</loc>
     <lastmod>2018-10-15T15:03:04+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://caas-one.github.io/</loc>
+    <lastmod>2018-10-17T15:03:04+08:00</lastmod>
     <priority>0</priority>
   </url>
   
