@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Translation on CaaSOne</title>
+    <link>http://caas-one.github.io/categories/translation/</link>
+    <description>Recent content in Translation on CaaSOne</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 15 Oct 2018 15:03:04 +0800</lastBuildDate>
+    
+	<atom:link href="http://caas-one.github.io/categories/translation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Building Microservices with Event Sourcing CQRS in Go using gRPC, NATS Streaming and CockroachDB</title>
+      <link>http://caas-one.github.io/post/news.caas.one/translation/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb/</link>
+      <pubDate>Mon, 15 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/translation/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb/</guid>
+      <description>使用Golang语言建造EventSourcing/CQRS的微服务 导读： 本文的主要目的是通过*EventSourcing*和*CQRS*来</description>
+    </item>
+    
+    <item>
+      <title>Diving Deep Into The Golang Channels</title>
+      <link>http://caas-one.github.io/post/news.caas.one/translation/diving-deep-into-the-golang-channels/</link>
+      <pubDate>Mon, 15 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/translation/diving-deep-into-the-golang-channels/</guid>
+      <description>深入理解*Golang*的Channel *Golang*中的并发远不止是语法： 这是一种设计模式 一种设计模式，它是处理并发是常见问题的可重复解</description>
+    </item>
+    
+    <item>
+      <title>README</title>
+      <link>http://caas-one.github.io/post/news.caas.one/translation/readme/</link>
+      <pubDate>Mon, 15 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/translation/readme/</guid>
+      <description>翻译计划&amp;amp;&amp;amp;格式约定 本列表中文章来源于日常发现的好的英文文章或者日报中好的英文文章 翻译文章约定使用MarkDown格式写作 翻</description>
+    </item>
+    
+  </channel>
+</rss>

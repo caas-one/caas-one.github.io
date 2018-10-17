@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Daily on CaaSOne</title>
+    <link>http://caas-one.github.io/categories/daily/</link>
+    <description>Recent content in Daily on CaaSOne</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 16 Oct 2018 15:03:04 +0800</lastBuildDate>
+    
+	<atom:link href="http://caas-one.github.io/categories/daily/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>技术日报(2018-10-16)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-16-caasone-daily-news/</link>
+      <pubDate>Tue, 16 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-16-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181016) Deploy Your First Deep Learning Model On Kubernetes With Python, Keras, Flask, and Docker https://medium.com/analytics-vidhya/deploy-your-first-deep-learning-model-on-kubernetes-with-python-keras-flask-and-docker-575dc07d9e76 How to use Envoy as a Load Balancer in Kubernetes https://blog.markvincze.com/how-to-use-envoy-as-a-load-balancer-in-kubernetes/ Autoscaling Applications on Kubernetes - A Primer https://blog.tomkerkhove.be/2018/10/08/autoscaling-applications-on-kubernetes-a-primer/ Imperative vs Declarative https://medium.com/@dominik.tornow/imperative-vs-declarative-8abc7dcae82e Docker And Kubernetes: Furthering The Goals Of DevOps Automation https://www.forbes.com/sites/oracle/2018/10/09/to-better-understand-detroits-revival-look-at-its-water-and-sewerage-department/#663d47c4d63e 编辑</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-15)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-15-caasone-daily-news/</link>
+      <pubDate>Mon, 15 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-15-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181015) Kubernetes Infrastructure https://docs.okd.io/latest/architecture/infrastructure_components/kubernetes_infrastructure.html Kubernetes vs. Docker: What Does It Really Mean? https://www.sumologic.com/blog/devops/kubernetes-vs-docker/ 每天5分钟玩转 OpenStack https://www.ibm.com/developerw</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-14)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-14-caasone-daily-news/</link>
+      <pubDate>Sun, 14 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-14-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181014) Service mesh data plane vs. control plane: https://blog.envoyproxy.io/service-mesh-data-plane-vs-control-plane-2774e720f7fc How to scale Microservices with Message Queues, Spring Boot, and Kubernetes: https://medium.freecodecamp.org/how-to-scale-microservices-with-message-queues-spring-boot-and-kubernetes-f691b7ba3acf Simplifying Microservices with Istio in Google Kubernetes Engine — Part I: https://medium.com/search?q=istio 基于 K8S 构建企业级 Serverless Container 平台的探索与实践</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-13)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-13-caasone-daily-news/</link>
+      <pubDate>Sat, 13 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-13-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181013) Kubespy:实时查看 Kubernetes资源 https://blog.fleeto.us/post/intro-kubespy/ Kubernetes Persistent Volumes with Deployment and StatefulSet https://akomljen.com/kubernetes-persistent-volumes-with-deployment-and-statefulset/ Kubernetes 如何走向统一调度之路 https://blog.fleeto.us/post/how-k8s-transforming-into-scheduler/ kubelet sche</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-12)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-12-caasone-daily-news/</link>
+      <pubDate>Fri, 12 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-12-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181012) 面向业务开发者的 k8s 基本命令: https://juejin.im/post/5b53255de51d451949092cba 使用kubeadm安装Kubernetes 1.12: https://blog.frognew.com/2018/10/kubeadm-install-kubernetes-1.12.html 使用Ceph做持久化存储</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-11)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-11-caasone-daily-news/</link>
+      <pubDate>Thu, 11 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-11-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181011) Kubernetes(k8s)容器运行时(CRI)简介 https://www.kubernetes.org.cn/1079.html Kubernetes v1.12: Introducing RuntimeClass https://kubernetes.io/blog/2018/10/10/kubernetes-v1.12-introducing-runtimeclass/ Introducing Volume Snapshot Alpha for Kubernetes https://kubernetes.io/blog/2018/10/09/introducing-volume-snapshot-alpha-for-kubernetes/ Getting Started with Docker on Windows Server 2019 https://blog.sixeyed.com/getting-started-with-docker-on-windows-server-2019/ Improving</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-10)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-10-caasone-daily-news/</link>
+      <pubDate>Wed, 10 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-10-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181010) 浅析kube-proxy中IPVS模式： https://www.opsdev.cn/post/IPVSinKube-proxy.html Kubernetes and external DNS services：https://banzaicl</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-09)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-09-caasone-daily-news/</link>
+      <pubDate>Tue, 09 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-09-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181009) 基于gRPC的健康检查机制：https://kubernetes.io/blog/2018/10/0</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-08)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-08-caasone-daily-news/</link>
+      <pubDate>Mon, 08 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-08-caasone-daily-news/</guid>
+      <description>﻿[容器时代]技术日报（20181008） 1.超详细的认证授权机制 https://www.jianshu.com/p/bb973ab1029b 2.k8s如何定义CRI、CNI、CSI接口 https://hk.saowen.com/a/ff516ade79b8b24cecd8606ec57b1aaa80c34c2428e2276a8d870fcfc861f1cb 3.升级之路最佳实践 https://googledeveloperschina.blogspot.com/2018/06/Kubernetes-best-practices-upgrading-your-clusters-with-zero-downtime.html 4.</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-07)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-07-caasone-daily-news/</link>
+      <pubDate>Sun, 07 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-07-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181007) 有赞容器化实践 http://dockone.io/article/8271 Kubernetes Local Persistent Volume源码分析 https://my.oschina.net/jxcdwangtao/blog/2050538 (译)Knative：在 Kubernetes 上构建可移植 Serverless 平台 https://mp.weixin.qq.com/s/-MSwqEiNkwV2hiTMISlZfA 在个人的项</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-06)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-06-caasone-daily-news/</link>
+      <pubDate>Sat, 06 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-06-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181006) 1. KubeDirector: The easy way to run complex stateful applications on Kubernetes: https://kubernetes.io/blog/page/2/ 2. Why You Should Not Neglect Your Developer’s Kubernetes Clusters: https://itnext.io/why-you-should-not-neglect-your-developers-kubernetes-clusters-a658c8ca0e78 3. 容器镜像安全概述: http://blog.nsfocus.net/docker-mirror-security/ 4. Kube</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-05)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-05-caasone-daily-news/</link>
+      <pubDate>Fri, 05 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-05-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181005) 1. Kubernetes概述：Pods、Nodes、Containers和Clusters https://blog.csdn.net/M2l0ZgSsVc7r69eFdTj/article/details/79104820 2. kube</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-04)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-04-caasone-daily-news/</link>
+      <pubDate>Thu, 04 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-04-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181004) Great new book on #Kubernetes security from our @mhausenblas and @lizrice from Aqua Security: https://kubernetes-security.info/ Using pod security policies with kubeadm: https://pmcgrath.net/using-pod-security-policies-with-kubeadm Unbabel migrated to Kubernetes and you won’t believe what happened next!: https://medium.com/unbabel/unbabel-migrated-to-kubernetes-and-you-wont-believe-what-happened-next-b39f082def1c Be as Serverless as You Can, but Not More than That: https://dzone.com/articles/be-as-serverless-as-you-can-but-not-more-than-that</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-03)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-03-caasone-daily-news/</link>
+      <pubDate>Wed, 03 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-03-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181003) Cortex: Stateful Prometheus Monitoring for Multiple Clients https://thenewstack.io/cortex-stateful-prometheus-monitoring-for-multiple-clients/ Health checking gRPC servers on Kubernetes https://kubernetes.io/blog/2018/10/01/health-checking-grpc-servers-on-kubernetes/ Modernizing Applications for Kubernetes https://www.digitalocean.com/community/tutorials/modernizing-applications-for-kubernetes 教程|如何在 K8S 集群上快速部署 Linkerd 2.0 http://www.k8smeetup.com/article/N1ubU3HtH K8S 1.12大特性最快最深度</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-02)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-02-caasone-daily-news/</link>
+      <pubDate>Tue, 02 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-02-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181002) Extending Kubernetes with Custom Resources and Operator Frameworks: https://speakerdeck.com/ianlewis/extending-kubernetes-with-custom-resources-and-operator-frameworks How, and When, to Deploy Serverless: https://thenewstack.io/how-and-when-to-deploy-serverless/ In-depth introduction to Kubernetes admission webhooks: https://banzaicloud.com/blog/k8s-admission-webhooks/ Debug Kubernetes Service Locally with Telepresence: https://articles.microservices.com/debug-a-kubernetes-service-locally-with-telepresence-675eb6e94b09 Distributed Tracing Infrastructure with Jaeger on Kubernetes: https://medium.com/@masroor.hasan/tracing-infrastructure-with-jaeger-on-kubernetes-6800132a677 编辑：@maxwell9</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-01)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-01-caasone-daily-news/</link>
+      <pubDate>Mon, 01 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-01-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181001) Ubuntu 18.04 离线安装 Kubernetes v1.11.1 https://www.kubernetes.org.cn/4387.html OpenFlow(OVS)下的“路由技术” https://www.kubernetes.org.cn/4507.html Resizing Persistent Volumes using Kubernetes https://kubernetes.io/blog/2018/07/12/resizing-persistent-volumes-using-kubernetes/ 安装k8s包管理器（Hel</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-09-30)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-09-30-caasone-daily-news/</link>
+      <pubDate>Sun, 30 Sep 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-09-30-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20180930) 深度剖析Kubernetes API Server三部曲 - Part 1: https://mp.weixin.qq.com/s/k8epe_rgvpQnduEauayQGA 深度剖析Kubernetes API Server三</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-09-29)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-09-29-caasone-daily-news/</link>
+      <pubDate>Sat, 29 Sep 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-09-29-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20180927) 迄今为止，最好的云计算开源软件 https://mp.weixin.qq.com/s/FCoYBHIRagPADwEQIpOalQ kubernetes简介：kube-dns和服务发现 http://cizixs.com/2017/04/11/kubernetes-intro-kube-dns Run Kubernetes on Your Laptop https://aws.amazon.com/cn/blogs/opensource/kubernetes-on-laptop/ 一</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-09-28)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-09-28-caasone-daily-news/</link>
+      <pubDate>Fri, 28 Sep 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-09-28-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20180928) Kubernetes kubectl 命令自动补全: https://www.abcdocker.com/abcdocker/3245 Google Container Registry(gcr.io) 中国可用镜像(长期维护): https://anjia0532.github.io/2017/11/15/gcr-io-image-mirror/ kubernetes集群问题排查: https://blog.csdn.net/huwh_/article/details/71308301 [k8s]</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-09-27)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-09-27-caasone-daily-news/</link>
+      <pubDate>Thu, 27 Sep 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-09-27-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20180927) Introducing kustomize; Template-free Configuration Customization for Kubernetes https://kubernetes.io/blog/2018/05/29/introducing-kustomize-template-free-configuration-customization-for-kubernetes/ K8S集群中部署jenkins http://blog.51cto.com/ylw6006/2159769 Logging Architecture https://kubernetes.io/docs/concepts/cluster-administration/logging/ How to Tag #Docker Images without Pulling them https://dille.name/blog/2018/09/20/how-to-tag-docker-images-without-pulling-them/ Golang Channel 源码分析 http://yulibaozi.com/Article/53 编辑：@win</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-09-26)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-09-26-caasone-daily-news/</link>
+      <pubDate>Wed, 26 Sep 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-09-26-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20180926) Use of Let&amp;rsquo;s Encrypt wildcard certs in Kubernetes https://rimusz.net/lets-encrypt-wildcard-certs-in-kubernetes/ K8s中请求网络链路的分析与总结 http://yulibaozi.com/Article/63 How to Run HA MySQL on Google Kubernetes Engine (GKE) https://portworx.com/run-ha-mysql-google-kubernetes-engine/ Hands On With Linkerd 2.0 https://kubernetes.io/blog/2018/09/18/hands-on-with-linkerd-2.0/ Knative</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-09-25)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-09-25-caasone-daily-news/</link>
+      <pubDate>Tue, 25 Sep 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-09-25-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20180925) Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what? https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0 Dynamically Expand Volume with CSI and Kubernetes https://kubernetes.io/blog/2018/08/02/dynamically-expand-volume-with-csi-and-kubernetes/ Kubernetes上无法解释的连接超时原因探寻之旅: https://mp.weixin.qq.com/s/y1b7hh8w5tdnjqF6gtVL-g Understanding kubernetes</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-09-22)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-09-22-caasone-daily-news/</link>
+      <pubDate>Sat, 22 Sep 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-09-22-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20180922) Linkerd 2.0迎来更新，向着Kubernetes再进一步: https://mp.weixin.qq.com/s/llMvMe1XfYTlhs8lCDWE_Q 记一次Docker/Kubernetes上无法</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-09-21)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-09-21-caasone-daily-news/</link>
+      <pubDate>Fri, 21 Sep 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-09-21-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20180921) Linkerd 2.0迎来更新，向着Kubernetes再进一步: https://mp.weixin.qq.com/s/llMvMe1XfYTlhs8lCDWE_Q 记一次Docker/Kubernetes上无法</description>
+    </item>
+    
+  </channel>
+</rss>
