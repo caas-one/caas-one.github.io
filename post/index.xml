@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Oct 2018 15:03:04 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 17 Oct 2018 19:46:27 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-10-18)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-18-caasone-daily-news/</link>
+      <pubDate>Wed, 17 Oct 2018 19:46:27 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-18-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181018) Microk8s puts up its Istio and sails away https://itnext.io/microk8s-puts-up-its-istio-and-sails-away-104c5a16c3c2 DevSpace - Cloud-Native Development with Kubernetes https://www.reddit.com/r/kubernetes/comments/9k942v/devspace_cloudnative_development_with_kubernetes/ How Does The Kubernetes Networking Work? : Part 1 https://www.level-up.one/kubernetes-networking-pods-levelup/ How Does The Kubernetes Networking Work? : Part 2 https://www.level-up.one/kubernetes-networking-series-two/ How Does The Kubernetes Networking Work? : Part 3 https://www.level-up.one/kubernetes-networking-3-level-up/ 编辑：@</description>
+    </item>
     
     <item>
       <title>技术日报(2018-10-17)</title>

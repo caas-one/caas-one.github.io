@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://caas-one.github.io/post/news.caas.one/posts/2018-10-18-caasone-daily-news/</loc>
+    <lastmod>2018-10-17T19:46:27+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://caas-one.github.io/post/news.caas.one/posts/2018-10-17-caasone-daily-news/</loc>
     <lastmod>2018-10-17T15:03:04+08:00</lastmod>
   </url>
@@ -154,13 +159,13 @@
   
   <url>
     <loc>http://caas-one.github.io/categories/daily/</loc>
-    <lastmod>2018-10-17T15:03:04+08:00</lastmod>
+    <lastmod>2018-10-17T19:46:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://caas-one.github.io/post/</loc>
-    <lastmod>2018-10-17T15:03:04+08:00</lastmod>
+    <lastmod>2018-10-17T19:46:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -177,7 +182,7 @@
   
   <url>
     <loc>http://caas-one.github.io/</loc>
-    <lastmod>2018-10-17T15:03:04+08:00</lastmod>
+    <lastmod>2018-10-17T19:46:27+08:00</lastmod>
     <priority>0</priority>
   </url>
   
