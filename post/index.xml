@@ -272,5 +272,14 @@
       <description>[容器时代]技术日报(20180921) Linkerd 2.0迎来更新，向着Kubernetes再进一步: https://mp.weixin.qq.com/s/llMvMe1XfYTlhs8lCDWE_Q 记一次Docker/Kubernetes上无法</description>
     </item>
     
+    <item>
+      <title>技术日报(2018-10-19)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-19-caasone-daily-news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-19-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181019) 1 多容器POD及Kubernetes容器通信 https://www.kubernetes.org.cn/2767.html?hmsr=toutiao.io&amp;amp;utm_medium=toutiao.io&amp;amp;utm_source=toutiao.io 2 Introducing Volume Snapshot Alpha for Kubernetes https://kubernetes.io/blog/2018/10/09/introducing-volume-snapshot-alpha-for-kubernetes/ 3 基于Kubernetes的原生 Serverless 框架</description>
+    </item>
+    
   </channel>
 </rss>
