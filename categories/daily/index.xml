@@ -6,15 +6,24 @@
     <description>Recent content in Daily on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Oct 2018 19:46:27 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 19 Oct 2018 15:03:04 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/categories/daily/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>技术日报(2018-10-19)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-19-caasone-daily-news/</link>
+      <pubDate>Fri, 19 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-19-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181019) 1 多容器POD及Kubernetes容器通信 https://www.kubernetes.org.cn/2767.html?hmsr=toutiao.io&amp;amp;utm_medium=toutiao.io&amp;amp;utm_source=toutiao.io 2 Introducing Volume Snapshot Alpha for Kubernetes https://kubernetes.io/blog/2018/10/09/introducing-volume-snapshot-alpha-for-kubernetes/ 3 基于Kubernetes的原生 Serverless 框架</description>
+    </item>
+    
+    <item>
       <title>技术日报(2018-10-18)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-18-caasone-daily-news/</link>
-      <pubDate>Wed, 17 Oct 2018 19:46:27 +0800</pubDate>
+      <pubDate>Thu, 18 Oct 2018 15:03:04 +0800</pubDate>
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-18-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181018) Microk8s puts up its Istio and sails away https://itnext.io/microk8s-puts-up-its-istio-and-sails-away-104c5a16c3c2 DevSpace - Cloud-Native Development with Kubernetes https://www.reddit.com/r/kubernetes/comments/9k942v/devspace_cloudnative_development_with_kubernetes/ How Does The Kubernetes Networking Work? : Part 1 https://www.level-up.one/kubernetes-networking-pods-levelup/ How Does The Kubernetes Networking Work? : Part 2 https://www.level-up.one/kubernetes-networking-series-two/ How Does The Kubernetes Networking Work? : Part 3 https://www.level-up.one/kubernetes-networking-3-level-up/ 编辑：@</description>
@@ -243,15 +252,6 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-09-21-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20180921) Linkerd 2.0迎来更新，向着Kubernetes再进一步: https://mp.weixin.qq.com/s/llMvMe1XfYTlhs8lCDWE_Q 记一次Docker/Kubernetes上无法</description>
-    </item>
-    
-    <item>
-      <title>技术日报(2018-10-19)</title>
-      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-19-caasone-daily-news/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-19-caasone-daily-news/</guid>
-      <description>[容器时代]技术日报(20181019) 1 多容器POD及Kubernetes容器通信 https://www.kubernetes.org.cn/2767.html?hmsr=toutiao.io&amp;amp;utm_medium=toutiao.io&amp;amp;utm_source=toutiao.io 2 Introducing Volume Snapshot Alpha for Kubernetes https://kubernetes.io/blog/2018/10/09/introducing-volume-snapshot-alpha-for-kubernetes/ 3 基于Kubernetes的原生 Serverless 框架</description>
     </item>
     
   </channel>
