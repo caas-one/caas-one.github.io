@@ -290,5 +290,14 @@
       <description>容器时代每日新闻日程表 日期 github wechat 2018-09-25 lth2015 李大伟 2018-09-26 ylck ylck 2018-09-27 windghoul 李卓 2018-09-28 zhouyuanyuana ruby(圆圆) 2018-09-29 penpenpenpen 武晨 2018-09-30 wbtlb 波波可爱多一点 2018-10-01 esterwang 止之 2018-10-02 maxwell92 苗立尧 2018-10-03 qbguan 管清波 2018-10-04 wujiandong 星璇缘 2018-10-05</description>
     </item>
     
+    <item>
+      <title>技术日报(2018-10-20)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-20-caasone-daily-news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-20-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181018) Pod挂载Volume失败问题分析 https://mp.weixin.qq.com/s/L0SYc6vHZN9mZkWpePuoxg 使用开源Breeze工具部署Kubernetes 1.12.1高可</description>
+    </item>
+    
   </channel>
 </rss>
