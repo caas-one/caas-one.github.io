@@ -263,5 +263,14 @@
       <description>[容器时代]技术日报(20181018) Pod挂载Volume失败问题分析 https://mp.weixin.qq.com/s/L0SYc6vHZN9mZkWpePuoxg 使用开源Breeze工具部署Kubernetes 1.12.1高可</description>
     </item>
     
+    <item>
+      <title>技术日报(2018-10-21)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-21-caasone-daily-news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-21-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181021) k8s全栈监控 https://juejin.im/post/5b6592ace51d4515b01c11ed 使用 k8s轻松部署深度学习模型 http://www.raincent.com/content-10-12525-1.html k8s基于DNS的服务发现 https://www.kubernetes.org.cn/4694.html Ansible 在 k8s Operator中</description>
+    </item>
+    
   </channel>
 </rss>
