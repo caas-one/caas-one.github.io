@@ -7,22 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Translation | 容器时代|CaaSOne</title>
-    <meta property="og:title" content="Translation - 容器时代|CaaSOne">
+    <title>Daily | 容器时代|CaaSOne</title>
+    <meta property="og:title" content="Daily - 容器时代|CaaSOne">
     <meta property="og:type" content="article">
         
         
     <meta name="Keywords" content="">
-    <meta name="description" content="Translation">
+    <meta name="description" content="Daily">
         
     <meta name="author" content="">
-    <meta property="og:url" content="http://caas-one.github.io/categories/translation/">
+    <meta property="og:url" content="http://caas-one.github.io/categories/daily/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/normalize.css">
     
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="alternate" type="application/rss+xml+xml" href="http://caas-one.github.io/categories/translation/index.xml" title="容器时代|CaaSOne" />
+    <link rel="alternate" type="application/rss+xml+xml" href="http://caas-one.github.io/categories/daily/index.xml" title="容器时代|CaaSOne" />
     <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 
     
@@ -64,7 +64,7 @@
                     
                     <h3 class="archive-title">
                         分类
-                        <span class="keyword">translation</span>
+                        <span class="keyword">daily</span>
                         中的文章
                     </h3>
                     
@@ -73,105 +73,90 @@
                         <article class="post">
                             <header>
                                 <h1 class="post-title">
-                                    <a href="http://caas-one.github.io/post/news.caas.one/translation/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb/">Building Microservices with Event Sourcing CQRS in Go using gRPC, NATS Streaming and CockroachDB</a>
+                                    <a href="http://caas-one.github.io/post/news.caas.one/posts/2018-09-22-caasone-daily-news/">技术日报(2018-09-22)</a>
                                 </h1>
                             </header>
                             <date class="post-meta meta-date">
-                                2018年10月15日
-                                15:03
+                                2018年9月22日
+                                00:00
                             </date>
                             
                             <div class="post-meta meta-category">
                                 |
                                 
-                                    <a href="/categories/translation">translation</a>
+                                    <a href="/categories/daily">daily</a>
                                 
                             </div>
                             
                             <div class="post-content">
-                                <h1 id="使用golang语言建造eventsourcing-cqrs的微服务">使用Golang语言建造EventSourcing/CQRS的微服务</h1>
+                                <h3 id="容器时代-技术日报-20180922">[容器时代]技术日报(20180922)</h3>
 
-<blockquote>
-<p>导读：</p>
-
-<p>本文的主要目的是通过*EventSourcing*和*CQRS*来构建事件驱动的微服务。构建真实世界的微服务是非常复杂的，其中最困难的部分是处理分散在各个微服务拥有的几个数据库中的数据。这使得构建跨多个微服务的业务事务变得非常复杂，并且查询数据时对多个数据库无法进行关联查询。 …</p></blockquote>
-                                <p class="readmore"><a href="http://caas-one.github.io/post/news.caas.one/translation/building-microservices-with-event-sourcing-cqrs-in-go-using-grpc-nats-streaming-and-cockroachdb/">阅读全文</a></p>
+<ol>
+<li>Linkerd 2.0迎来更新，向着Kubernetes再进一步: <a href="https://mp.weixin.qq.com/s/llMvMe1XfYTlhs8lCDWE_Q">https://mp.weixin.qq.com/s/llMvMe1XfYTlhs8lCDWE_Q</a></li>
+<li>记一次Docker/Kubernetes上无法解释的连接超时原因探寻之旅: …</li></ol>
+                                <p class="readmore"><a href="http://caas-one.github.io/post/news.caas.one/posts/2018-09-22-caasone-daily-news/">阅读全文</a></p>
                             </div>
                         </article>
                     
                         <article class="post">
                             <header>
                                 <h1 class="post-title">
-                                    <a href="http://caas-one.github.io/post/news.caas.one/translation/diving-deep-into-the-golang-channels/">Diving Deep Into The Golang Channels</a>
+                                    <a href="http://caas-one.github.io/post/news.caas.one/posts/2018-09-21-caasone-daily-news/">技术日报(2018-09-21)</a>
                                 </h1>
                             </header>
                             <date class="post-meta meta-date">
-                                2018年10月15日
-                                15:03
+                                2018年9月21日
+                                00:00
                             </date>
                             
                             <div class="post-meta meta-category">
                                 |
                                 
-                                    <a href="/categories/translation">translation</a>
+                                    <a href="/categories/daily">daily</a>
                                 
                             </div>
                             
                             <div class="post-content">
-                                <h1 id="深入理解-golang-的-channel">深入理解*Golang*的<em>Channel</em></h1>
+                                <h3 id="容器时代-技术日报-20180921">[容器时代]技术日报(20180921)</h3>
 
-<p>*Golang*中的并发远不止是语法：</p>
-
-<blockquote>
-<p>这是一种设计模式</p>
-</blockquote>
-
-<p>一种设计模式，它是处理并发是常见问题的可重复解决方案，因为</p>
-
-<blockquote>
-<p>并发需要同步</p>
-</blockquote>
-
-<p>*Go*使用一个名为*CSP(Communicating Sequential process)*的并发模型，通过*Channel*实现这种同步模式。它的核心核心哲学 …</p>
-                                <p class="readmore"><a href="http://caas-one.github.io/post/news.caas.one/translation/diving-deep-into-the-golang-channels/">阅读全文</a></p>
-                            </div>
-                        </article>
-                    
-                        <article class="post">
-                            <header>
-                                <h1 class="post-title">
-                                    <a href="http://caas-one.github.io/post/news.caas.one/translation/readme/">README</a>
-                                </h1>
-                            </header>
-                            <date class="post-meta meta-date">
-                                2018年10月15日
-                                15:03
-                            </date>
-                            
-                            <div class="post-meta meta-category">
-                                |
-                                
-                                    <a href="/categories/translation">translation</a>
-                                
-                            </div>
-                            
-                            <div class="post-content">
-                                <h3 id="翻译计划-格式约定">翻译计划&amp;&amp;格式约定</h3>
-
-<p><em>本列表中文章来源于日常发现的好的英文文章或者日报中好的英文文章</em>
-<em>翻译文章约定使用MarkDown格式写作</em></p>
-
-<h4 id="翻译仓库格式约定">翻译仓库格式约定</h4>
-
-<p>translation/image &mdash;- 路径下为文章中所需图片，图片命名格式为 XXX-日期（月日 例 1010）
-translation &mdash;- 路径下为翻译后文章， …</p>
-                                <p class="readmore"><a href="http://caas-one.github.io/post/news.caas.one/translation/readme/">阅读全文</a></p>
+<ol>
+<li>Linkerd 2.0迎来更新，向着Kubernetes再进一步: <a href="https://mp.weixin.qq.com/s/llMvMe1XfYTlhs8lCDWE_Q">https://mp.weixin.qq.com/s/llMvMe1XfYTlhs8lCDWE_Q</a></li>
+<li>记一次Docker/Kubernetes上无法解释的连接超时原因探寻之旅: …</li></ol>
+                                <p class="readmore"><a href="http://caas-one.github.io/post/news.caas.one/posts/2018-09-21-caasone-daily-news/">阅读全文</a></p>
                             </div>
                         </article>
                     
 
                     
 
+
+<ol class="page-navigator">
+    
+    <li class="prev">
+        <a href="/categories/daily/page/3/">上一页</a>
+    </li>
+    
+
+    
+    <li>
+        <a href="/categories/daily/">1</a>
+    </li>
+    
+    <li>
+        <a href="/categories/daily/page/2/">2</a>
+    </li>
+    
+    <li>
+        <a href="/categories/daily/page/3/">3</a>
+    </li>
+    
+    <li class="current">
+        <a href="/categories/daily/page/4/">4</a>
+    </li>
+    
+
+    
+</ol>
 
 
 
