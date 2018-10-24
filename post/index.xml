@@ -6,12 +6,17 @@
     <description>Recent content in Posts on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+<<<<<<< HEAD
     <lastBuildDate>Wed, 24 Oct 2018 00:00:00 +0800</lastBuildDate>
+=======
+    <lastBuildDate>Mon, 22 Oct 2018 15:03:04 +0800</lastBuildDate>
+>>>>>>> a492c0abc7267d22b7ba6c619c7e1bc3ee35a7c8
     
 	<atom:link href="http://caas-one.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+<<<<<<< HEAD
       <title>技术日报(2018-10-24)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-24-caasone-daily-news/</link>
       <pubDate>Wed, 24 Oct 2018 00:00:00 +0800</pubDate>
@@ -33,6 +38,11 @@
       <title>技术日报(2018-10-22)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-22-caasone-daily-news/</link>
       <pubDate>Mon, 22 Oct 2018 09:41:00 +0800</pubDate>
+=======
+      <title>技术日报(2018-10-22)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-22-caasone-daily-news/</link>
+      <pubDate>Mon, 22 Oct 2018 15:03:04 +0800</pubDate>
+>>>>>>> a492c0abc7267d22b7ba6c619c7e1bc3ee35a7c8
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-22-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181022) Istio Helm Chart 详解 - SidecarInjectorWebhook: https://mp.weixin.qq.com/s/YUEx54gRwp3AdO8qXLAXYQ Kiali——Istio Service Mesh 的可观察性工具: https://mp.weixin.qq.com/s/m6mC5i27Zv7xnmziAKRLiw 介绍Kubernetes DNS服务：比</description>
@@ -41,7 +51,11 @@
     <item>
       <title>技术日报(2018-10-21)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-21-caasone-daily-news/</link>
+<<<<<<< HEAD
       <pubDate>Sun, 21 Oct 2018 00:00:00 +0800</pubDate>
+=======
+      <pubDate>Sun, 21 Oct 2018 15:03:04 +0800</pubDate>
+>>>>>>> a492c0abc7267d22b7ba6c619c7e1bc3ee35a7c8
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-21-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181021) k8s全栈监控 https://juejin.im/post/5b6592ace51d4515b01c11ed 使用 k8s轻松部署深度学习模型 http://www.raincent.com/content-10-12525-1.html k8s基于DNS的服务发现 https://www.kubernetes.org.cn/4694.html Ansible 在 k8s Operator中</description>
@@ -50,7 +64,11 @@
     <item>
       <title>技术日报(2018-10-20)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-20-caasone-daily-news/</link>
+<<<<<<< HEAD
       <pubDate>Sat, 20 Oct 2018 00:00:00 +0800</pubDate>
+=======
+      <pubDate>Sat, 20 Oct 2018 15:03:04 +0800</pubDate>
+>>>>>>> a492c0abc7267d22b7ba6c619c7e1bc3ee35a7c8
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-20-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181018) Pod挂载Volume失败问题分析 https://mp.weixin.qq.com/s/L0SYc6vHZN9mZkWpePuoxg 使用开源Breeze工具部署Kubernetes 1.12.1高可</description>
@@ -59,7 +77,11 @@
     <item>
       <title>技术日报(2018-10-19)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-19-caasone-daily-news/</link>
+<<<<<<< HEAD
       <pubDate>Fri, 19 Oct 2018 00:00:00 +0800</pubDate>
+=======
+      <pubDate>Fri, 19 Oct 2018 15:03:04 +0800</pubDate>
+>>>>>>> a492c0abc7267d22b7ba6c619c7e1bc3ee35a7c8
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-19-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181019) 1 多容器POD及Kubernetes容器通信 https://www.kubernetes.org.cn/2767.html?hmsr=toutiao.io&amp;amp;utm_medium=toutiao.io&amp;amp;utm_source=toutiao.io 2 Introducing Volume Snapshot Alpha for Kubernetes https://kubernetes.io/blog/2018/10/09/introducing-volume-snapshot-alpha-for-kubernetes/ 3 基于Kubernetes的原生 Serverless 框架</description>
@@ -68,7 +90,11 @@
     <item>
       <title>技术日报(2018-10-18)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-18-caasone-daily-news/</link>
+<<<<<<< HEAD
       <pubDate>Thu, 18 Oct 2018 00:00:00 +0800</pubDate>
+=======
+      <pubDate>Thu, 18 Oct 2018 15:03:04 +0800</pubDate>
+>>>>>>> a492c0abc7267d22b7ba6c619c7e1bc3ee35a7c8
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-18-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181018) Microk8s puts up its Istio and sails away https://itnext.io/microk8s-puts-up-its-istio-and-sails-away-104c5a16c3c2 DevSpace - Cloud-Native Development with Kubernetes https://www.reddit.com/r/kubernetes/comments/9k942v/devspace_cloudnative_development_with_kubernetes/ How Does The Kubernetes Networking Work? : Part 1 https://www.level-up.one/kubernetes-networking-pods-levelup/ How Does The Kubernetes Networking Work? : Part 2 https://www.level-up.one/kubernetes-networking-series-two/ How Does The Kubernetes Networking Work? : Part 3 https://www.level-up.one/kubernetes-networking-3-level-up/ 编辑：@</description>
