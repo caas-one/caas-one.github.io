@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Oct 2018 18:14:31 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 26 Oct 2018 21:50:11 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-10-27)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-27-caasone-daily-news/</link>
+      <pubDate>Fri, 26 Oct 2018 21:50:11 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-27-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181027) IPVS-Based In-Cluster Load Balancing Deep Dive: https://kubernetes.io/blog/2018/07/09/ipvs-based-in-cluster-load-balancing-deep-dive/ gRPC-Web is going GA: https://www.cncf.io/blog/2018/10/24/grpc-web-is-going-ga/ gRPC On HTTP/2: Engineering A Robust, High Performance Protocol: https://www.cncf.io/blog/2018/08/31/grpc-on-http-2-engineering-a-robust-high-performance-protocol/ Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what?: https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0 Understanding the Container Storage Interface (CSI): https://medium.com/google-cloud/understanding-the-container-storage-interface-csi-ddbeb966a3b 编辑：@wbtlb</description>
+    </item>
     
     <item>
       <title>技术日报(2018-10-26)</title>

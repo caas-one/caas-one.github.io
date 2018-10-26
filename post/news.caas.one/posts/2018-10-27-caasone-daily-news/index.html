@@ -7,20 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Diving Deep Into The Golang Channels | 容器时代|CaaSOne</title>
-    <meta property="og:title" content="Diving Deep Into The Golang Channels - 容器时代|CaaSOne">
+    <title>技术日报(2018-10-27) | 容器时代|CaaSOne</title>
+    <meta property="og:title" content="技术日报(2018-10-27) - 容器时代|CaaSOne">
     <meta property="og:type" content="article">
         
-    <meta property="article:published_time" content="2018-10-15T15:03:04&#43;08:00">
+    <meta property="article:published_time" content="2018-10-26T21:50:11&#43;08:00">
         
         
-    <meta property="article:modified_time" content="2018-10-15T15:03:04&#43;08:00">
+    <meta property="article:modified_time" content="2018-10-26T21:50:11&#43;08:00">
         
     <meta name="Keywords" content="">
-    <meta name="description" content="Diving Deep Into The Golang Channels">
+    <meta name="description" content="技术日报(2018-10-27)">
         
     <meta name="author" content="">
-    <meta property="og:url" content="http://caas-one.github.io/post/news.caas.one/translation/diving-deep-into-the-golang-channels/">
+    <meta property="og:url" content="http://caas-one.github.io/post/news.caas.one/posts/2018-10-27-caasone-daily-news/">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="/css/normalize.css">
@@ -67,17 +67,17 @@
                 <div class="res-cons">
                     <article class="post">
                         <header>
-                            <h1 class="post-title">Diving Deep Into The Golang Channels</h1>
+                            <h1 class="post-title">技术日报(2018-10-27)</h1>
                         </header>
                         <date class="post-meta meta-date">
-                            2018年10月15日
-                            15:03
+                            2018年10月26日
+                            21:50
                         </date>
                         
                         <div class="post-meta meta-category">
                             |
                             
-                                <a href="/categories/translation">translation</a>
+                                <a href="/categories/daily">daily</a>
                             
                         </div>
                         
@@ -89,69 +89,29 @@
                         <div class="post-content">
                             
 
-<h1 id="深入理解-golang-的-channel">深入理解*Golang*的<em>Channel</em></h1>
+<h3 id="容器时代-技术日报-20181027">[容器时代]技术日报(20181027)</h3>
 
-<p>*Golang*中的并发远不止是语法：</p>
+<ol>
+<li>IPVS-Based In-Cluster Load Balancing Deep Dive: <a href="https://kubernetes.io/blog/2018/07/09/ipvs-based-in-cluster-load-balancing-deep-dive/">https://kubernetes.io/blog/2018/07/09/ipvs-based-in-cluster-load-balancing-deep-dive/</a></li>
+<li>gRPC-Web is going GA: <a href="https://www.cncf.io/blog/2018/10/24/grpc-web-is-going-ga/">https://www.cncf.io/blog/2018/10/24/grpc-web-is-going-ga/</a></li>
+<li>gRPC On HTTP/2: Engineering A Robust, High Performance Protocol: <a href="https://www.cncf.io/blog/2018/08/31/grpc-on-http-2-engineering-a-robust-high-performance-protocol/">https://www.cncf.io/blog/2018/08/31/grpc-on-http-2-engineering-a-robust-high-performance-protocol/</a></li>
+<li>Kubernetes NodePort vs LoadBalancer vs Ingress? When should I use what?: <a href="https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0">https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0</a></li>
+<li>Understanding the Container Storage Interface (CSI): <a href="https://medium.com/google-cloud/understanding-the-container-storage-interface-csi-ddbeb966a3b">https://medium.com/google-cloud/understanding-the-container-storage-interface-csi-ddbeb966a3b</a></li>
+</ol>
 
-<blockquote>
-<p>这是一种设计模式</p>
-</blockquote>
+<p>编辑：@wbtlb</p>
 
-<p>一种设计模式，它是处理并发是常见问题的可重复解决方案，因为</p>
+<p>地址：<a href="http://k8s.today/">http://k8s.today/</a></p>
 
-<blockquote>
-<p>并发需要同步</p>
-</blockquote>
+<p>[容器时代志愿编辑招募] <a href="https://mp.weixin.qq.com/s/BVBzWx_u1xfwSZGTO-6qlg">https://mp.weixin.qq.com/s/BVBzWx_u1xfwSZGTO-6qlg</a></p>
 
-<p>*Go*使用一个名为*CSP(Communicating Sequential process)*的并发模型，通过*Channel*实现这种同步模式。它的核心核心哲学是：</p>
+<p>[容器时代专属KubeCon福利] 点击链接领取-25%现金优惠☞ <a href="https://mp.weixin.qq.com/s/ARUF8fTKn3VUKxFrOShWBQ">https://mp.weixin.qq.com/s/ARUF8fTKn3VUKxFrOShWBQ</a></p>
 
-<blockquote>
-<p>不要通过共享内存来通信；相反，通过通信来共享内存</p>
-</blockquote>
+<h3 id="其他">其他</h3>
 
-<p>但*Go*也相信你做正确的事情，所以本文的其余部分将尝试打开*Go*哲学的大门以及展示*Channel*的——使用一个队列实现*channel*的效果。</p>
+<p>1、欢迎将自己的博文转载到公众号进一步推广</p>
 
-<h3 id="channel"><em>Channel</em></h3>
-
-<hr />
-
-<pre><code class="language-golang">func goRoutineA(a &lt;-chan int) {
-    val := &lt;-a
-    fmt.Println(&quot;goRoutineA received the data&quot;, val)
-}
-func main() {
-    ch := make(chan int)
-    go goRoutineA(ch)
-    time.Sleep(time.Second * 1)
-}
-</code></pre>
-
-<p><img src="https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/goroutineA1-1010.jpeg" alt="" /></p>
-
-<p><img src="https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/goroutineA2-1010.jpeg" alt="" /></p>
-
-<p>在接收或者发送数据时，*Go*中的*Channel*的责任是使*Goroutine*在*Channel*上阻塞。</p>
-
-<p>如果不熟悉*Go Scheduler*，请阅读有关它的介绍:<a href="https://morsmachine.dk/go-scheduler">https://morsmachine.dk/go-scheduler</a></p>
-
-<h3 id="channel-的结构">*Channel*的结构</h3>
-
-<hr />
-
-<p>在*Go*中，*Channel*的数据结构是*Goroutine*之间消息传递的基础，所以，我们看一下在创建*channel*结构体时发生了什么：</p>
-
-<pre><code class="language-golang">ch := make（chan int，3）
-</code></pre>
-
-<p><img src="https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/makechan-1010.png" alt="" /></p>
-
-<p>这意味着什么？如何获得*channel*的数据结构？在进一步讨论之前，我们先看看几个重要的数据结构：</p>
-
-<h2 id="hchan-结构"><strong>hchan</strong>结构</h2>
-
-<p>当我们编写<code>make(chan int, 2)</code>时，<strong>channel</strong>将从*hchan*结构创建，它的结构如下：</p>
-
-<p><img src="https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/hchanstruct-1010.png" alt="hchan和waitq结构体" /></p>
+<p>2、想翻译文章的同学现在就可开始</p>
 
                         </div>
 
