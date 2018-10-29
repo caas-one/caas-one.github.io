@@ -382,6 +382,15 @@
     
     <item>
       <title></title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-28-caasone-daily-news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-28-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181028) OpenShift的DevOps工具链 http://www.chenshake.com/openshift-devops-tool-chain/ Using go mod download to speed up Golang Docker builds https://medium.com/@petomalina/using-go-mod-download-to-speed-up-golang-docker-builds-707591336888 微软资深工程师详解 K8S 容器运行时 http://www.k8smeetup.com/article/NkEV1VeiS K8S</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://caas-one.github.io/post/news.caas.one/schedule/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
