@@ -30,6 +30,15 @@
     </item>
     
     <item>
+      <title>技术日报(2018-10-29)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-29-caasone-daily-news/</link>
+      <pubDate>Mon, 29 Oct 2018 00:00:00 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-29-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181029) 为你的Kubernetes集群添加Istio https://medium.com/uptime-99/adopting-istio-in-your-kubernetes-clusters-a3e28ed6f4b7 定制Kubernetes日志（第一部分） https://medium.com/google-cloud/customizing-kubernetes-logging-part-1-a1e5791dcda8 容器化部署的</description>
+    </item>
+    
+    <item>
       <title>Handling-Clients-Requests-Properly-with-Kubernetes</title>
       <link>http://caas-one.github.io/post/news.caas.one/translation/handling-clients-requests-properly-with-kubernetes/</link>
       <pubDate>Sun, 28 Oct 2018 22:25:27 +0800</pubDate>
@@ -387,15 +396,6 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/readme/</guid>
       <description>容器时代每日新闻仓库</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-29-caasone-daily-news/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-29-caasone-daily-news/</guid>
-      <description>[容器时代]技术日报(20181029) 为你的Kubernetes集群添加Istio https://medium.com/uptime-99/adopting-istio-in-your-kubernetes-clusters-a3e28ed6f4b7 定制Kubernetes日志（第一部分） https://medium.com/google-cloud/customizing-kubernetes-logging-part-1-a1e5791dcda8 容器化部署的</description>
     </item>
     
     <item>

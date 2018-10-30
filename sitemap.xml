@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>http://caas-one.github.io/post/news.caas.one/posts/2018-10-29-caasone-daily-news/</loc>
+    <lastmod>2018-10-29T00:00:00+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://caas-one.github.io/post/news.caas.one/translation/handling-clients-requests-properly-with-kubernetes/</loc>
     <lastmod>2018-10-28T22:25:27+08:00</lastmod>
   </url>
@@ -214,10 +219,6 @@
   
   <url>
     <loc>http://caas-one.github.io/post/news.caas.one/readme/</loc>
-  </url>
-  
-  <url>
-    <loc>http://caas-one.github.io/post/news.caas.one/posts/2018-10-29-caasone-daily-news/</loc>
   </url>
   
   <url>
