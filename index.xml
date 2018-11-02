@@ -6,10 +6,19 @@
     <description>Recent content on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 Oct 2018 08:41:23 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 02 Nov 2018 09:41:33 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-11-01)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-01-caasone-daily-news/</link>
+      <pubDate>Fri, 02 Nov 2018 09:41:33 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-01-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181101) 1、 Kubernetes 日志传输中的四大挑战 http://blog.itpub.net/31545808/viewspace-2216008/ 2、 Virtlet: run VMs as Kubernetes pods https://www.mirantis.com/blog/virtlet-run-vms-as-kubernetes-pods/ 3、 tensorflow与kubernetes/doc</description>
+    </item>
     
     <item>
       <title>技术日报(2018-10-31)</title>
@@ -180,15 +189,6 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/translation/diving-deep-into-the-golang-channels/</guid>
       <description>深入理解*Golang*的Channel *Golang*中的并发远不止是语法： 这是一种设计模式 一种设计模式，它是处理并发是常见问题的可重复解</description>
-    </item>
-    
-    <item>
-      <title>README</title>
-      <link>http://caas-one.github.io/post/news.caas.one/translation/readme/</link>
-      <pubDate>Mon, 15 Oct 2018 15:03:04 +0800</pubDate>
-      
-      <guid>http://caas-one.github.io/post/news.caas.one/translation/readme/</guid>
-      <description>翻译计划&amp;amp;&amp;amp;格式约定 本列表中文章来源于日常发现的好的英文文章或者日报中好的英文文章 翻译文章约定使用MarkDown格式写作 翻</description>
     </item>
     
     <item>
@@ -423,6 +423,15 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/schedule/readme/</guid>
       <description>容器时代每日新闻日程表 日期 github wechat 2018-09-25 lth2015 李大伟 2018-09-26 ylck ylck 2018-09-27 windghoul 李卓 2018-09-28 zhouyuanyuana ruby(圆圆) 2018-09-29 penpenpenpen 武晨 2018-09-30 wbtlb 波波可爱多一点 2018-10-01 esterwang 止之 2018-10-02 maxwell92 苗立尧 2018-10-03 qbguan 管清波 2018-10-04 wujiandong 星璇缘 2018-10-05</description>
+    </item>
+    
+    <item>
+      <title>README</title>
+      <link>http://caas-one.github.io/post/news.caas.one/translation/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/translation/readme/</guid>
+      <description>翻译计划&amp;amp;&amp;amp;格式约定 本列表中文章来源于日常发现的好的英文文章或者日报中好的英文文章 翻译文章约定使用MarkDown格式写作 翻</description>
     </item>
     
   </channel>
