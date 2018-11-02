@@ -6,10 +6,19 @@
     <description>Recent content in Daily on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Nov 2018 09:41:33 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 02 Nov 2018 09:42:56 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/categories/daily/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-11-02)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-02-caasone-daily-news/</link>
+      <pubDate>Fri, 02 Nov 2018 09:42:56 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-02-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181102) 1.云原生可移植性的神话 https://blog.csdn.net/yinlongfei_love/article/details/83576589 2.Kubernetes RBAC 详解 https://www.jianshu.com/p/f77d5d0df58b 3.IBM云计算CTO讲述Istio项目的起源、分工及目标 https://www.colabug.com/4267718.html 4.</description>
+    </item>
     
     <item>
       <title>技术日报(2018-11-01)</title>
