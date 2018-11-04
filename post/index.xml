@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 02 Nov 2018 09:42:56 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 04 Nov 2018 09:51:27 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-11-03)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-03-caasone-daily-news/</link>
+      <pubDate>Sun, 04 Nov 2018 09:51:27 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-03-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181103) 不同的视角解读Docker和Kubernetes https://dzone.com/articles/docker-containers-and-kubernetes-an-architectural Kubernetes网络模型原理 https://juejin.im/post/5bd6c14be51d455b7461cb46 Another reason why your Docker containers may be</description>
+    </item>
     
     <item>
       <title>技术日报(2018-11-02)</title>
@@ -264,15 +273,6 @@
     </item>
     
     <item>
-      <title>技术日报(2018-10-08)</title>
-      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-08-caasone-daily-news/</link>
-      <pubDate>Mon, 08 Oct 2018 00:00:00 +0800</pubDate>
-      
-      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-08-caasone-daily-news/</guid>
-      <description>﻿[容器时代]技术日报（20181008） 1.超详细的认证授权机制 https://www.jianshu.com/p/bb973ab1029b 2.k8s如何定义CRI、CNI、CSI接口 https://hk.saowen.com/a/ff516ade79b8b24cecd8606ec57b1aaa80c34c2428e2276a8d870fcfc861f1cb 3.升级之路最佳实践 https://googledeveloperschina.blogspot.com/2018/06/Kubernetes-best-practices-upgrading-your-clusters-with-zero-downtime.html 4.</description>
-    </item>
-    
-    <item>
       <title>技术日报(2018-10-07)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-07-caasone-daily-news/</link>
       <pubDate>Sun, 07 Oct 2018 00:00:00 +0800</pubDate>
@@ -414,6 +414,15 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/readme/</guid>
       <description>容器时代每日新闻仓库</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-08-caasone-daily-news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-08-caasone-daily-news/</guid>
+      <description>title: &amp;ldquo;技术日报(2018-10-08)&amp;rdquo; date: 2018-10-08T00:00:00+08:00 categories: [ &amp;ldquo;daily&amp;rdquo;] draft: false ﻿[容器时代]技术日报（20181008） 1.超详细的认证授权机</description>
     </item>
     
     <item>
