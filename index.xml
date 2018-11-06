@@ -6,10 +6,19 @@
     <description>Recent content on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Nov 2018 17:34:29 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 06 Nov 2018 12:04:35 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2019-11-06)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2019-11-06-caasone-daily-news/</link>
+      <pubDate>Tue, 06 Nov 2018 12:04:35 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2019-11-06-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181106) Topology-Aware Volume Provisioning in Kubernetes https://kubernetes.io/blog/2018/10/11/topology-aware-volume-provisioning-in-kubernetes/ 初试 Kubernetes 集群中使用 Contour 反向代理 https://www.kubernetes.org.cn/4779.html 深入浅出聊聊Kubernetes存储（一）：详解Kubern</description>
+    </item>
     
     <item>
       <title>技术日报(2019-11-05)</title>
