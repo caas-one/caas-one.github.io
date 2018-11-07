@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Nov 2018 23:41:04 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 07 Nov 2018 20:52:08 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Understanding-resource-limits-in-kubernetes-memory</title>
+      <link>http://caas-one.github.io/post/news.caas.one/translation/understanding-resource-limits-in-kubernetes-memory/</link>
+      <pubDate>Wed, 07 Nov 2018 20:52:08 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/translation/understanding-resource-limits-in-kubernetes-memory/</guid>
+      <description>深入理解Kubernetes资源限制：内存 当我开始大范围使用Kubernetes的时候，我开始考虑一个我做实验时没有遇到的问题：当集群里的节</description>
+    </item>
     
     <item>
       <title>技术日报(2018-11-07)</title>
