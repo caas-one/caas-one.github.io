@@ -6,10 +6,19 @@
     <description>Recent content in Daily on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 06 Nov 2018 23:41:04 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 08 Nov 2018 08:20:14 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/categories/daily/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-11-08)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-08-caasone-daily-news/</link>
+      <pubDate>Thu, 08 Nov 2018 08:20:14 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-08-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181108) 阿里云Kubernetes实战2–搭建基础服务 https://www.kubernetes.org.cn/4666.html Kubernetes-基于flannel的集群网络 https://www.kubernetes.org.cn/4105.html</description>
+    </item>
     
     <item>
       <title>技术日报(2018-11-07)</title>
