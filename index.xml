@@ -6,10 +6,19 @@
     <description>Recent content on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 11 Nov 2018 17:14:30 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Nov 2018 18:07:52 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-11-10)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-10-caasone-daily-news/</link>
+      <pubDate>Sun, 11 Nov 2018 18:07:52 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-10-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181110) Why Docker containers will take over the world https://www.pluralsight.com/blog/it-ops/docker-containers-take-over-world How to use Kata Containers and CRI (containerd plugin) with Kubernetes https://github.com/kata-containers/documentation/blob/master/how-to/how-to-use-k8s-with-cri-containerd-and-kata.md Using Docker Containers As Development Machines https://medium.com/rate-engineering/using-docker-containers-as-development-machines-4de8199fc662 Quickstart: Run SQL Server container images with Docker https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-2017 8 great tools that make Docker better https://www.infoworld.com/article/2966158/docker/8-great-tools-that-make-docker-better.html 编辑：@e</description>
+    </item>
     
     <item>
       <title>技术日报(2018-11-11)</title>
@@ -522,6 +531,15 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/schedule/readme/</guid>
       <description>容器时代每日新闻日程表 日期 github wechat 2018-09-25 lth2015 李大伟 2018-09-26 ylck ylck 2018-09-27 windghoul 李卓 2018-09-28 zhouyuanyuana ruby(圆圆) 2018-09-29 penpenpenpen 武晨 2018-09-30 wbtlb 波波可爱多一点 2018-10-01 esterwang 止之 2018-10-02 maxwell92 苗立尧 2018-10-03 qbguan 管清波 2018-10-04 wujiandong 星璇缘 2018-10-05</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://caas-one.github.io/post/news.caas.one/translation/understanding-resources-limits-in-kubernetes-cpu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/translation/understanding-resources-limits-in-kubernetes-cpu/</guid>
+      <description>深入理解Kubernetes资源限制：CPU 在上一篇关于Kubernetes资源限制的文章（链接）我们讨论了如何通过ResourceRequ</description>
     </item>
     
     <item>

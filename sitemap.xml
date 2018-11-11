@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://caas-one.github.io/post/news.caas.one/posts/2018-11-10-caasone-daily-news/</loc>
+    <lastmod>2018-11-11T18:07:52+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://caas-one.github.io/post/news.caas.one/posts/2018-11-11-caasone-daily-news/</loc>
     <lastmod>2018-11-11T17:14:30+08:00</lastmod>
   </url>
@@ -284,19 +289,23 @@
   </url>
   
   <url>
+    <loc>http://caas-one.github.io/post/news.caas.one/translation/understanding-resources-limits-in-kubernetes-cpu/</loc>
+  </url>
+  
+  <url>
     <loc>http://caas-one.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://caas-one.github.io/categories/daily/</loc>
-    <lastmod>2018-11-11T17:14:30+08:00</lastmod>
+    <lastmod>2018-11-11T18:07:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://caas-one.github.io/post/</loc>
-    <lastmod>2018-11-11T17:14:30+08:00</lastmod>
+    <lastmod>2018-11-11T18:07:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -317,7 +326,7 @@
   
   <url>
     <loc>http://caas-one.github.io/</loc>
-    <lastmod>2018-11-11T17:14:30+08:00</lastmod>
+    <lastmod>2018-11-11T18:07:52+08:00</lastmod>
     <priority>0</priority>
   </url>
   
