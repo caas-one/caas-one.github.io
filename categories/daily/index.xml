@@ -6,10 +6,28 @@
     <description>Recent content in Daily on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Nov 2018 08:20:14 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 11 Nov 2018 17:14:30 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/categories/daily/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-11-11)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-11-caasone-daily-news/</link>
+      <pubDate>Sun, 11 Nov 2018 17:14:30 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-11-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181111) 谁在运行我的Kubernetes Pod？容器运行时的过去、现在和未来 https://www.infoq.com/articles/container-runtimes-kubernetes 在Kubernetes上使用g</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-11-09)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-09-caasone-daily-news/</link>
+      <pubDate>Fri, 09 Nov 2018 21:50:11 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-09-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181109) Cilium 1.3：具有Cassandra和Memcached支持的Envoy Go语言扩展: https://mp.weixin.qq.com/s/yZhKRs_5lsj9CdD2OqRjZQ Cilium——</description>
+    </item>
     
     <item>
       <title>技术日报(2018-11-08)</title>
