@@ -6,10 +6,19 @@
     <description>Recent content on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 12 Nov 2018 10:12:30 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 14 Nov 2018 09:42:32 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-11-14)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-14-caasone-daily-news/</link>
+      <pubDate>Wed, 14 Nov 2018 09:42:32 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-14-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181114) 1 深入理解K8S APIServer 运行时及代码重构 https://mp.weixin.qq.com/s/A4gyrerc_0Yh4_ht8fCKhQ 2 当当网专家详述如何利用K8S构建自主可控的FaaS平台 https://mp.weixin.qq.com/s/5C84hsAzLxrfJCYrtXiEIg 3 阿里</description>
+    </item>
     
     <item>
       <title>技术日报(2018-11-12)</title>
