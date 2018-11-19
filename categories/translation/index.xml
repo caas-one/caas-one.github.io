@@ -6,19 +6,10 @@
     <description>Recent content in Translation on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Nov 2018 20:52:08 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 28 Oct 2018 22:25:27 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/categories/translation/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Understanding-resource-limits-in-kubernetes-memory</title>
-      <link>http://caas-one.github.io/post/news.caas.one/translation/understanding-resource-limits-in-kubernetes-memory/</link>
-      <pubDate>Wed, 07 Nov 2018 20:52:08 +0800</pubDate>
-      
-      <guid>http://caas-one.github.io/post/news.caas.one/translation/understanding-resource-limits-in-kubernetes-memory/</guid>
-      <description>深入理解Kubernetes资源限制：内存 当我开始大范围使用Kubernetes的时候，我开始考虑一个我做实验时没有遇到的问题：当集群里的节</description>
-    </item>
     
     <item>
       <title>Handling-Clients-Requests-Properly-with-Kubernetes</title>
@@ -45,6 +36,24 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/translation/diving-deep-into-the-golang-channels/</guid>
       <description>深入理解*Golang*的Channel *Golang*中的并发远不止是语法： 这是一种设计模式 一种设计模式，它是处理并发是常见问题的可重复解</description>
+    </item>
+    
+    <item>
+      <title>Understanding-resource-limits-in-kubernetes-memory</title>
+      <link>http://caas-one.github.io/post/news.caas.one/translation/understanding-resource-limits-in-kubernetes-memory/</link>
+      <pubDate>Mon, 15 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/translation/understanding-resource-limits-in-kubernetes-memory/</guid>
+      <description>深入理解Kubernetes资源限制：内存 当我开始大范围使用Kubernetes的时候，我开始考虑一个我做实验时没有遇到的问题：当集群里的节</description>
+    </item>
+    
+    <item>
+      <title>Understanding-resources-limits-in-kubernetes-cpu</title>
+      <link>http://caas-one.github.io/post/news.caas.one/translation/understanding-resources-limits-in-kubernetes-cpu/</link>
+      <pubDate>Mon, 15 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/translation/understanding-resources-limits-in-kubernetes-cpu/</guid>
+      <description>深入理解Kubernetes资源限制：CPU 在上一篇关于Kubernetes资源限制的文章（链接）我们讨论了如何通过ResourceRequ</description>
     </item>
     
     <item>

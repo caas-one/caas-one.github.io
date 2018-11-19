@@ -6,15 +6,42 @@
     <description>Recent content on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Nov 2018 20:25:52 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 19 Nov 2018 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>技术日报(2018-11-19)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-19-caasone-daily-news/</link>
+      <pubDate>Mon, 19 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-19-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181119) 容器技术在钱包节点部署中的优化策略 emptyDir、hostPath以及local volume都是K</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-11-17)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-17-caasone-daily-news/</link>
+      <pubDate>Sat, 17 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-17-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181117) Fluntbit: 云原生环境日志收集的挑战: https://www.youtube.com/watch?v=msi6yNlItCk 使用knative构建你的Serverless服务: https://blog.openshift.com/knative-building-your-serverless-service/ Helm从入门到</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-11-16)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-16-caasone-daily-news/</link>
+      <pubDate>Fri, 16 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-16-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181116) 1.Kubernetes并发控制与数据一致性的实现原理 https://blog.csdn.net/jackxuf/article/details/80084358 2.评估Kubernetes中的Server</description>
+    </item>
+    
+    <item>
       <title>技术日报(2018-11-15)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-15-caasone-daily-news/</link>
-      <pubDate>Thu, 15 Nov 2018 20:25:52 +0800</pubDate>
+      <pubDate>Thu, 15 Nov 2018 00:00:00 +0800</pubDate>
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-15-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181115) 1 超适合小项目的 K8S 部署策略 https://mp.weixin.qq.com/s/3qvTSuPYZPdLqi6otyJfhw 2 基于K8S的容器云平台如何部署微服务 https://mp.weixin.qq.com/s/rynbQzPW4NKuRPzrk7d8Yw 3 剑指Kubernetes 揭秘腾</description>
@@ -23,7 +50,7 @@
     <item>
       <title>技术日报(2018-11-14)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-14-caasone-daily-news/</link>
-      <pubDate>Wed, 14 Nov 2018 09:42:32 +0800</pubDate>
+      <pubDate>Wed, 14 Nov 2018 00:00:00 +0800</pubDate>
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-14-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181114) 1 深入理解K8S APIServer 运行时及代码重构 https://mp.weixin.qq.com/s/A4gyrerc_0Yh4_ht8fCKhQ 2 当当网专家详述如何利用K8S构建自主可控的FaaS平台 https://mp.weixin.qq.com/s/5C84hsAzLxrfJCYrtXiEIg 3 阿里</description>
@@ -32,28 +59,28 @@
     <item>
       <title>技术日报(2018-11-12)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-12-caasone-daily-news/</link>
-      <pubDate>Mon, 12 Nov 2018 10:12:30 +0800</pubDate>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0800</pubDate>
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-12-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181112) K8s Start Up Race Conditions https://medium.com/pareture/k8s-start-up-race-conditions-6901953d2ec1 Ingress on Kubernetes with Cert-Manager https://blog.kubernauts.io/ingress-on-kubernetes-with-cert-manager-ad7d413d76f0 使用kubectl访问Kubernetes集群时的身份验证和授权 https://tonybai.com/2018/06/14/the-authentication-and-authorization-of-kubectl-when-accessing-k8s-cluster/ 深入理解 Kubernetes</description>
     </item>
     
     <item>
-      <title>技术日报(2018-11-10)</title>
-      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-10-caasone-daily-news/</link>
-      <pubDate>Sun, 11 Nov 2018 18:07:52 +0800</pubDate>
-      
-      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-10-caasone-daily-news/</guid>
-      <description>[容器时代]技术日报(20181110) Why Docker containers will take over the world https://www.pluralsight.com/blog/it-ops/docker-containers-take-over-world How to use Kata Containers and CRI (containerd plugin) with Kubernetes https://github.com/kata-containers/documentation/blob/master/how-to/how-to-use-k8s-with-cri-containerd-and-kata.md Using Docker Containers As Development Machines https://medium.com/rate-engineering/using-docker-containers-as-development-machines-4de8199fc662 Quickstart: Run SQL Server container images with Docker https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-2017 8 great tools that make Docker better https://www.infoworld.com/article/2966158/docker/8-great-tools-that-make-docker-better.html 编辑：@e</description>
-    </item>
-    
-    <item>
       <title>技术日报(2018-11-11)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-11-caasone-daily-news/</link>
-      <pubDate>Sun, 11 Nov 2018 17:14:30 +0800</pubDate>
+      <pubDate>Sun, 11 Nov 2018 00:00:00 +0800</pubDate>
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-11-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181111) 谁在运行我的Kubernetes Pod？容器运行时的过去、现在和未来 https://www.infoq.com/articles/container-runtimes-kubernetes 在Kubernetes上使用g</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-11-10)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-10-caasone-daily-news/</link>
+      <pubDate>Sat, 10 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-10-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181110) Why Docker containers will take over the world https://www.pluralsight.com/blog/it-ops/docker-containers-take-over-world How to use Kata Containers and CRI (containerd plugin) with Kubernetes https://github.com/kata-containers/documentation/blob/master/how-to/how-to-use-k8s-with-cri-containerd-and-kata.md Using Docker Containers As Development Machines https://medium.com/rate-engineering/using-docker-containers-as-development-machines-4de8199fc662 Quickstart: Run SQL Server container images with Docker https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-2017 8 great tools that make Docker better https://www.infoworld.com/article/2966158/docker/8-great-tools-that-make-docker-better.html 编辑：@e</description>
     </item>
     
     <item>
@@ -68,52 +95,43 @@
     <item>
       <title>技术日报(2018-11-08)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-08-caasone-daily-news/</link>
-      <pubDate>Thu, 08 Nov 2018 08:20:14 +0800</pubDate>
+      <pubDate>Thu, 08 Nov 2018 00:00:00 +0800</pubDate>
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-08-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181108) 阿里云Kubernetes实战2–搭建基础服务 https://www.kubernetes.org.cn/4666.html Kubernetes-基于flannel的集群网络 https://www.kubernetes.org.cn/4105.html</description>
     </item>
     
     <item>
-      <title>Understanding-resource-limits-in-kubernetes-memory</title>
-      <link>http://caas-one.github.io/post/news.caas.one/translation/understanding-resource-limits-in-kubernetes-memory/</link>
-      <pubDate>Wed, 07 Nov 2018 20:52:08 +0800</pubDate>
-      
-      <guid>http://caas-one.github.io/post/news.caas.one/translation/understanding-resource-limits-in-kubernetes-memory/</guid>
-      <description>深入理解Kubernetes资源限制：内存 当我开始大范围使用Kubernetes的时候，我开始考虑一个我做实验时没有遇到的问题：当集群里的节</description>
-    </item>
-    
-    <item>
       <title>技术日报(2018-11-07)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-07-caasone-daily-news/</link>
-      <pubDate>Tue, 06 Nov 2018 23:41:04 +0800</pubDate>
+      <pubDate>Wed, 07 Nov 2018 00:00:00 +0800</pubDate>
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-07-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181107) Is kubernetes too complicated? : https://medium.com/@betz.mark/is-kubernetes-too-complicated-1ffd8a3a6fb4 Kubernetes: five steps to well-behaved apps : https://medium.com/@betz.mark/kubernetes-five-steps-to-well-behaved-apps-a7cbeb99471a 使用 prometheus + grafana 监控 ceph 集群 : https://blog.csdn.net/dylloveyou/article/details/79090324 PROMETHEUS 集群方案之 REMOTE READ 实战 : http://www.songjiayang.com/posts/prometheus-ji-qun-fang-an-zhi-remote-read-shi-zhan Ensure High Availability and Uptime With Kubernetes Horizontal Pod Autoscaler and Prometheus</description>
     </item>
     
     <item>
-      <title>技术日报(2019-11-06)</title>
-      <link>http://caas-one.github.io/post/news.caas.one/posts/2019-11-06-caasone-daily-news/</link>
-      <pubDate>Tue, 06 Nov 2018 12:04:35 +0800</pubDate>
+      <title>技术日报(2018-11-06)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-06-caasone-daily-news/</link>
+      <pubDate>Tue, 06 Nov 2018 00:00:00 +0800</pubDate>
       
-      <guid>http://caas-one.github.io/post/news.caas.one/posts/2019-11-06-caasone-daily-news/</guid>
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-06-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181106) Topology-Aware Volume Provisioning in Kubernetes https://kubernetes.io/blog/2018/10/11/topology-aware-volume-provisioning-in-kubernetes/ 初试 Kubernetes 集群中使用 Contour 反向代理 https://www.kubernetes.org.cn/4779.html 深入浅出聊聊Kubernetes存储（一）：详解Kubern</description>
     </item>
     
     <item>
-      <title>技术日报(2019-11-05)</title>
-      <link>http://caas-one.github.io/post/news.caas.one/posts/2019-11-05-caasone-daily-news/</link>
-      <pubDate>Mon, 05 Nov 2018 17:34:29 +0800</pubDate>
+      <title>技术日报(2018-11-05)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-05-caasone-daily-news/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0800</pubDate>
       
-      <guid>http://caas-one.github.io/post/news.caas.one/posts/2019-11-05-caasone-daily-news/</guid>
-      <description>[容器时代]技术日报(20181105) Service Mesh深度学习系列（一）| istio pilot-agent模块分析: http://www.sel.zju.edu.cn/?p=831 Promethues 监控 Kubernetes 集群节点: https://www.qikqiak.com/k8s-book/docs/54.%E7%9B%91%E6%8E%A7Kubernetes%E9%9B%86%E7%BE%A4%E8%8A%82%E7%82%B9.html Knative: Configuration, Routes and Revisions: https://blog.openshift.com/knative-configurations-routes-and-revisions/</description>
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-05-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181106) Topology-Aware Volume Provisioning in Kubernetes https://kubernetes.io/blog/2018/10/11/topology-aware-volume-provisioning-in-kubernetes/ 初试 Kubernetes 集群中使用 Contour 反向代理 https://www.kubernetes.org.cn/4779.html 深入浅出聊聊Kubernetes存储（一）：详解Kubern</description>
     </item>
     
     <item>
       <title>技术日报(2018-11-04)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-04-caasone-daily-news/</link>
-      <pubDate>Sun, 04 Nov 2018 21:19:50 +0800</pubDate>
+      <pubDate>Sun, 04 Nov 2018 00:00:00 +0800</pubDate>
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-04-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181104) SRE: 弹性——使用Enovy实现速率控制: https://medium.com/dm03514-tech-blog/sre-resiliency-bolt-on-sidecar-rate-limiting-with-envoy-sidecar-5381bd4a1137 通过kubernetes和iostio实现蓝绿发布: https://thenewstack.io/tutorial-blue-green-deployments-with-kubernetes-and-istio/ SRE: Go</description>
@@ -122,7 +140,7 @@
     <item>
       <title>技术日报(2018-11-03)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-03-caasone-daily-news/</link>
-      <pubDate>Sun, 04 Nov 2018 09:51:27 +0800</pubDate>
+      <pubDate>Sat, 03 Nov 2018 00:00:00 +0800</pubDate>
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-03-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181103) 不同的视角解读Docker和Kubernetes https://dzone.com/articles/docker-containers-and-kubernetes-an-architectural Kubernetes网络模型原理 https://juejin.im/post/5bd6c14be51d455b7461cb46 Another reason why your Docker containers may be</description>
@@ -131,7 +149,7 @@
     <item>
       <title>技术日报(2018-11-02)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-02-caasone-daily-news/</link>
-      <pubDate>Fri, 02 Nov 2018 09:42:56 +0800</pubDate>
+      <pubDate>Fri, 02 Nov 2018 00:00:00 +0800</pubDate>
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-02-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181102) 1.云原生可移植性的神话 https://blog.csdn.net/yinlongfei_love/article/details/83576589 2.Kubernetes RBAC 详解 https://www.jianshu.com/p/f77d5d0df58b 3.IBM云计算CTO讲述Istio项目的起源、分工及目标 https://www.colabug.com/4267718.html 4.</description>
@@ -140,7 +158,7 @@
     <item>
       <title>技术日报(2018-11-01)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-01-caasone-daily-news/</link>
-      <pubDate>Fri, 02 Nov 2018 09:41:33 +0800</pubDate>
+      <pubDate>Thu, 01 Nov 2018 00:00:00 +0800</pubDate>
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-01-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181101) 1、 Kubernetes 日志传输中的四大挑战 http://blog.itpub.net/31545808/viewspace-2216008/ 2、 Virtlet: run VMs as Kubernetes pods https://www.mirantis.com/blog/virtlet-run-vms-as-kubernetes-pods/ 3、 tensorflow与kubernetes/doc</description>
@@ -149,7 +167,7 @@
     <item>
       <title>技术日报(2018-10-31)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-31-caasone-daily-news/</link>
-      <pubDate>Wed, 31 Oct 2018 08:41:23 +0800</pubDate>
+      <pubDate>Wed, 31 Oct 2018 00:00:00 +0800</pubDate>
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-31-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181031) 一个GO语言性能问题的发现和解决 https://zhuanlan.zhihu.com/p/47940999 K8S 漏洞报告 - 社区又双叒发release了，到底升还是不升？！ https://mp.weixin.qq.com/s?__biz=MzIzNzU5NTYzMA==&amp;amp;mid=2247485112&amp;amp;idx=1&amp;amp;sn=2b8dd5781f84310a5f7abed7a5161026 Effectively Managing</description>
@@ -158,19 +176,10 @@
     <item>
       <title>技术日报(2018-10-30)</title>
       <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-30-caasone-daily-news/</link>
-      <pubDate>Tue, 30 Oct 2018 12:09:25 +0800</pubDate>
+      <pubDate>Tue, 30 Oct 2018 00:00:00 +0800</pubDate>
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-30-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181030) 使用Helm优化Kubernetes下的研发体验：实现持续交付流水线 https://mp.weixin.qq.com/s/b-ab5TkkGppSFBnY0Uxkmw 使用Go语言操作Istio和其</description>
-    </item>
-    
-    <item>
-      <title>技术日报(2018-10-28)</title>
-      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-28-caasone-daily-news/</link>
-      <pubDate>Mon, 29 Oct 2018 09:55:45 +0800</pubDate>
-      
-      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-28-caasone-daily-news/</guid>
-      <description>[容器时代]技术日报(20181028) OpenShift的DevOps工具链 http://www.chenshake.com/openshift-devops-tool-chain/ Using go mod download to speed up Golang Docker builds https://medium.com/@petomalina/using-go-mod-download-to-speed-up-golang-docker-builds-707591336888 微软资深工程师详解 K8S 容器运行时 http://www.k8smeetup.com/article/NkEV1VeiS K8S</description>
     </item>
     
     <item>
@@ -189,6 +198,15 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/translation/handling-clients-requests-properly-with-kubernetes/</guid>
       <description>本文摘自Marko Luksa的《Kubernetes in Actions》 无需多言，我们都希望能够更加优雅地处理HTTP请求。显然我们不想在Po</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-10-28)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-10-28-caasone-daily-news/</link>
+      <pubDate>Sun, 28 Oct 2018 00:00:00 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-28-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181028) OpenShift的DevOps工具链 http://www.chenshake.com/openshift-devops-tool-chain/ Using go mod download to speed up Golang Docker builds https://medium.com/@petomalina/using-go-mod-download-to-speed-up-golang-docker-builds-707591336888 微软资深工程师详解 K8S 容器运行时 http://www.k8smeetup.com/article/NkEV1VeiS K8S</description>
     </item>
     
     <item>
@@ -315,6 +333,24 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/translation/diving-deep-into-the-golang-channels/</guid>
       <description>深入理解*Golang*的Channel *Golang*中的并发远不止是语法： 这是一种设计模式 一种设计模式，它是处理并发是常见问题的可重复解</description>
+    </item>
+    
+    <item>
+      <title>Understanding-resource-limits-in-kubernetes-memory</title>
+      <link>http://caas-one.github.io/post/news.caas.one/translation/understanding-resource-limits-in-kubernetes-memory/</link>
+      <pubDate>Mon, 15 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/translation/understanding-resource-limits-in-kubernetes-memory/</guid>
+      <description>深入理解Kubernetes资源限制：内存 当我开始大范围使用Kubernetes的时候，我开始考虑一个我做实验时没有遇到的问题：当集群里的节</description>
+    </item>
+    
+    <item>
+      <title>Understanding-resources-limits-in-kubernetes-cpu</title>
+      <link>http://caas-one.github.io/post/news.caas.one/translation/understanding-resources-limits-in-kubernetes-cpu/</link>
+      <pubDate>Mon, 15 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/translation/understanding-resources-limits-in-kubernetes-cpu/</guid>
+      <description>深入理解Kubernetes资源限制：CPU 在上一篇关于Kubernetes资源限制的文章（链接）我们讨论了如何通过ResourceRequ</description>
     </item>
     
     <item>
@@ -558,15 +594,6 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/schedule/readme/</guid>
       <description>容器时代每日新闻日程表 日期 github wechat 2018-09-25 lth2015 李大伟 2018-09-26 ylck ylck 2018-09-27 windghoul 李卓 2018-09-28 zhouyuanyuana ruby(圆圆) 2018-09-29 penpenpenpen 武晨 2018-09-30 wbtlb 波波可爱多一点 2018-10-01 esterwang 止之 2018-10-02 maxwell92 苗立尧 2018-10-03 qbguan 管清波 2018-10-04 wujiandong 星璇缘 2018-10-05</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://caas-one.github.io/post/news.caas.one/translation/understanding-resources-limits-in-kubernetes-cpu/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://caas-one.github.io/post/news.caas.one/translation/understanding-resources-limits-in-kubernetes-cpu/</guid>
-      <description>深入理解Kubernetes资源限制：CPU 在上一篇关于Kubernetes资源限制的文章（链接）我们讨论了如何通过ResourceRequ</description>
     </item>
     
     <item>
