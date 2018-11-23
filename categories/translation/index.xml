@@ -6,19 +6,10 @@
     <description>Recent content in Translation on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Nov 2018 21:12:18 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 28 Oct 2018 22:25:27 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/categories/translation/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Dynamically Expand Volume with CSI and Kubernetes</title>
-      <link>http://caas-one.github.io/post/news.caas.one/translation/dynamically-expand-volume-with-csi-and-kubernetes/</link>
-      <pubDate>Mon, 19 Nov 2018 21:12:18 +0800</pubDate>
-      
-      <guid>http://caas-one.github.io/post/news.caas.one/translation/dynamically-expand-volume-with-csi-and-kubernetes/</guid>
-      <description>Kubernetes本身具有包含了具有大量用例且功能强大的存储子系统。然而，如果我们利用Kubernetes建设关系数据库平台，就需要面临一</description>
-    </item>
     
     <item>
       <title>Handling-Clients-Requests-Properly-with-Kubernetes</title>

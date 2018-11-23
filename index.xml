@@ -6,10 +6,19 @@
     <description>Recent content on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Nov 2018 19:17:43 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 22 Nov 2018 21:50:11 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-11-22)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-22-caasone-daily-news/</link>
+      <pubDate>Thu, 22 Nov 2018 21:50:11 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-22-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181122) IPVS-Based In-Cluster Load Balancing Deep Dive: https://kubernetes.io/zh/blog/2018/07/09/ipvs-based-in-cluster-load-balancing-deep-dive/ How to scale Microservices with Message Queues, Spring Boot, and Kubernetes: https://medium.freecodecamp.org/how-to-scale-microservices-with-message-queues-spring-boot-and-kubernetes-f691b7ba3acf 新型云基础设施项目Airship 介绍: https://www.sdnlab.com/22558.html Convergence to Kubernetes: https://medium.com/@pingles/convergence-to-kubernetes-137ffa7ea2bc The missing CI/CD Kubernetes component: Helm package</description>
+    </item>
     
     <item>
       <title>技术日报(2018-11-21)</title>
@@ -27,15 +36,6 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2019-11-20-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181120) 手把手教你打造高效的 Kubernetes 命令行终端 : https://www.hi-linux.com/posts/44953.html Calico网络不通的排查思路 : https://mp.weixin.qq.com/s/MZIj_cvvtTiAfNf_0lpfTg? Kubernetes 资源管理概述 : https://www.hi-linux.com/posts/65337.html Understanding resource limits in kubernetes :</description>
-    </item>
-    
-    <item>
-      <title>Dynamically Expand Volume with CSI and Kubernetes</title>
-      <link>http://caas-one.github.io/post/news.caas.one/translation/dynamically-expand-volume-with-csi-and-kubernetes/</link>
-      <pubDate>Mon, 19 Nov 2018 21:12:18 +0800</pubDate>
-      
-      <guid>http://caas-one.github.io/post/news.caas.one/translation/dynamically-expand-volume-with-csi-and-kubernetes/</guid>
-      <description>Kubernetes本身具有包含了具有大量用例且功能强大的存储子系统。然而，如果我们利用Kubernetes建设关系数据库平台，就需要面临一</description>
     </item>
     
     <item>
@@ -602,7 +602,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://caas-one.github.io/post/news.caas.one/foundation/readme/</guid>
-      <description>容器时代运营基金 日期 项目 收入 支出 余额 经手人 2018-10-28 Serverless获奖 1740.00元 N/A 1740.00元 lth2015 2018-11-08 购买文化衫(20件) N/A 1780.0</description>
+      <description>容器时代运营基金 日期 项目 收入 支出 余额 经手人 2018-10-28 Serverless获奖 1740.00元 —— 1740.00元 lth2015 2018-11-08 购买文化衫-20件 —— 1780.</description>
     </item>
     
     <item>
@@ -621,6 +621,15 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/schedule/readme/</guid>
       <description>容器时代每日新闻日程表 日期 github wechat 2018-09-25 lth2015 李大伟 2018-09-26 ylck ylck 2018-09-27 windghoul 李卓 2018-09-28 zhouyuanyuana ruby(圆圆) 2018-09-29 penpenpenpen 武晨 2018-09-30 wbtlb 波波可爱多一点 2018-10-01 esterwang 止之 2018-10-02 maxwell92 苗立尧 2018-10-03 qbguan 管清波 2018-10-04 wujiandong 星璇缘 2018-10-05</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://caas-one.github.io/post/news.caas.one/translation/dynamically-expand-volume-with-csi-and-kubernetes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/translation/dynamically-expand-volume-with-csi-and-kubernetes/</guid>
+      <description>利用CSI和Kubernetes实现动态扩容 ​ Kubernetes本身具有包含了具有大量用例且功能强大的存储子系统。然而，如果我们利用Kub</description>
     </item>
     
     <item>
