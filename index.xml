@@ -6,10 +6,19 @@
     <description>Recent content on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Nov 2018 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 25 Nov 2018 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-11-25)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-25-caasone-daily-news/</link>
+      <pubDate>Sun, 25 Nov 2018 00:00:00 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-25-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181125) Benchmark results of Kubernetes network plugins (CNI) over 10Gbit/s network https://medium.com/@infrabuilder/benchmark-results-of-kubernetes-network-plugins-cni-over-10gbit-s-network-36475925a560 Kubernetes存活探针和就绪探针的最佳实践 http://dockone.io/article/8367 详解k8s组件Ingress</description>
+    </item>
     
     <item>
       <title>技术日报(2018-11-24)</title>
