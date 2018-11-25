@@ -39,6 +39,15 @@
     </item>
     
     <item>
+      <title>Dynamically Expand Volume with CSI and Kubernetes</title>
+      <link>http://caas-one.github.io/post/news.caas.one/translation/dynamically-expand-volume-with-csi-and-kubernetes/</link>
+      <pubDate>Mon, 15 Oct 2018 15:03:04 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/translation/dynamically-expand-volume-with-csi-and-kubernetes/</guid>
+      <description>利用CSI和Kubernetes实现动态扩容 ​ Kubernetes本身具有包含了具有大量用例且功能强大的存储子系统。然而，如果我们利用Kub</description>
+    </item>
+    
+    <item>
       <title>Understanding-resource-limits-in-kubernetes-memory</title>
       <link>http://caas-one.github.io/post/news.caas.one/translation/understanding-resource-limits-in-kubernetes-memory/</link>
       <pubDate>Mon, 15 Oct 2018 15:03:04 +0800</pubDate>

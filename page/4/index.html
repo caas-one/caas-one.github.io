@@ -328,7 +328,7 @@
                         <article class="post">
                             <header>
                                 <h1 class="post-title">
-                                    <a href="http://caas-one.github.io/post/news.caas.one/translation/understanding-resource-limits-in-kubernetes-memory/">Understanding-resource-limits-in-kubernetes-memory</a>
+                                    <a href="http://caas-one.github.io/post/news.caas.one/translation/dynamically-expand-volume-with-csi-and-kubernetes/">Dynamically Expand Volume with CSI and Kubernetes</a>
                                 </h1>
                             </header>
                             <date class="post-meta meta-date">
@@ -344,11 +344,15 @@
                             </div>
                             
                             <div class="post-content">
-                                <h2 id="深入理解kubernetes资源限制-内存">深入理解Kubernetes资源限制：内存</h2>
+                                <h1 id="利用csi和kubernetes实现动态扩容">利用CSI和Kubernetes实现动态扩容</h1>
 
-<p>当我开始大范围使用Kubernetes的时候，我开始考虑一个我做实验时没有遇到的问题：当集群里的节点没有足够资源的时候，Pod会卡在Pending状态。你是没有办法给节点增加CPU或者内存的，那么你该怎么做才能这个Pod从这个节点拿走？最简单的办法是添加另一个节点，我承认我总是这么干。最终这个策略无法平 …</p>
+<p>​   Kubernetes本身具有包含了具有大量用例且功能强大的存储子系统。然而，如果我们利用Kubernetes建设关系数据库平台，就需要面临一个挑战：建立数据存储。本文用来讲述如何扩展CSI(容器存储接口)0.2.0同时整合Kubernetes，并且展示了动态扩容的重要性。</p>
+
+<h4 id="简介">简介</h4>
+
+<p>​   随着我们对客 …</p>
                             </div>
-                            <p class="readmore"><a href="http://caas-one.github.io/post/news.caas.one/translation/understanding-resource-limits-in-kubernetes-memory/">阅读全文</a></p>
+                            <p class="readmore"><a href="http://caas-one.github.io/post/news.caas.one/translation/dynamically-expand-volume-with-csi-and-kubernetes/">阅读全文</a></p>
                         </article>
                     
 
@@ -389,6 +393,10 @@
     
     <li>
         <a href="/page/7/">7</a>
+    </li>
+    
+    <li>
+        <a href="/page/8/">8</a>
     </li>
     
 
@@ -470,7 +478,7 @@
             </li>
             
             <li>
-                <a href="/categories/translation/">translation(6)</a>
+                <a href="/categories/translation/">translation(7)</a>
             </li>
             
         </ul>
