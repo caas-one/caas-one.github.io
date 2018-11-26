@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="generator" content="Hugo 0.48" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Dynamically Expand Volume with CSI and Kubernetes | 容器时代|CaaSOne</title>
+    <meta property="og:title" content="Dynamically Expand Volume with CSI and Kubernetes - 容器时代|CaaSOne">
+    <meta property="og:type" content="article">
+        
+    <meta property="article:published_time" content="2018-10-15T15:03:04&#43;08:00">
+        
+        
+    <meta property="article:modified_time" content="2018-10-15T15:03:04&#43;08:00">
+        
+    <meta name="Keywords" content="">
+    <meta name="description" content="Dynamically Expand Volume with CSI and Kubernetes">
+        
+    <meta name="author" content="">
+    <meta property="og:url" content="http://caas-one.github.io/post/news.caas.one/translation/dynamically-expand-volume-with-csi-and-kubernetes/">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="/css/normalize.css">
+    
+    <link rel="stylesheet" href="/css/prism.css">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+
+    
+    
+</head>
+
+<body>
+<header id="header" class="clearfix">
+    <div class="container">
+        <div class="col-group">
+            <div class="site-name ">
+                
+                    <a id="logo" href="http://caas-one.github.io/">
+                        容器时代|CaaSOne
+                    </a>
+                
+                
+            </div>
+            <div>
+                <nav id="nav-menu" class="clearfix">
+                    <a class="current" href="http://caas-one.github.io/">首页</a>
+                    
+                    <a  href="/about/" title="关于">关于</a>
+                    
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<div id="body">
+    <div class="container">
+        <div class="col-group">
+
+            <div class="col-8" id="main">
+                <div class="res-cons">
+                    <article class="post">
+                        <header>
+                            <h1 class="post-title">Dynamically Expand Volume with CSI and Kubernetes</h1>
+                        </header>
+                        <date class="post-meta meta-date">
+                            2018年10月15日
+                            15:03
+                        </date>
+                        
+                        <div class="post-meta meta-category">
+                            |
+                            
+                                <a href="/categories/translation">translation</a>
+                            
+                        </div>
+                        
+                        
+                        <div class="post-meta">
+                            <span id="busuanzi_container_page_pv">|<span id="busuanzi_value_page_pv"></span><span> 阅读</span></span>
+                        </div>
+                        
+                        <div class="post-content">
+                            
+
+<h1 id="利用csi和kubernetes实现动态扩容">利用CSI和Kubernetes实现动态扩容</h1>
+
+<p>​   Kubernetes本身具有包含了具有大量用例且功能强大的存储子系统。然而，如果我们利用Kubernetes建设关系数据库平台，就需要面临一个挑战：建立数据存储。本文用来讲述如何扩展CSI(容器存储接口)0.2.0同时整合Kubernetes，并且展示了动态扩容的重要性。</p>
+
+<h4 id="简介">简介</h4>
+
+<p>​   随着我们对客户的关注，尤其是对金融领域的客户，我们可以发现容器编排技术具有很大的发展空间。开发者们希望能通过开源解决方案来重新设计运行在虚拟化基础设施和裸金属上的独立应用程序。</p>
+
+<p>​   对于可扩展性和技术成熟度两方面，Kubernetes和Docker处于业内的顶端。关系数据库对于迁移至关重要，但是将独立应用程序迁移到像Kubernetes这样的分布式编配十分具有挑战性。</p>
+
+<p>​   对于关系型数据库来说，我们应该关注其存储功能。Kubernetes本身具有强大的存储子系统，其功能强大，包含用例广泛。如果我们利用kubernetes建设关系数据库平台，就需要面临一个挑战：建立数据存储。但是Kubernetes还有一些基本的功能没有实现，尤其是动态扩容。这听起来很无聊，但是创建、删除、挂载和卸载等操作非常必要。</p>
+
+<p>目前，扩容只能与存储提供程序一起使用，例如：</p>
+
+<ul>
+<li>gcePersistentDisk</li>
+<li>awsElasticBlockStore</li>
+<li>OpenStack Cinder</li>
+<li>glusterfs</li>
+<li>rbd</li>
+</ul>
+
+<p>​        为了启用这个特性，我们需要设置feature-gate expandpersistentvolume为True，并打开PersistentVolumeClaimResize准入插件。一旦启用了PersistentVolumeClaimResize，调整存储大小的功能将被allowVolumeExpansion设置为True的存储类开启。</p>
+
+<p>​   不幸的是，即使底层存储提供程序具有此功能，通过容器存储接口(CSI)和Kubernetes动态扩容依然不可用。</p>
+
+<p>​   本文将给出CSI的简化视图，然后介绍如何在现有的CSI和Kubernetes上引入一个新的扩展卷特性。最后，本文将演示如何动态地扩容。</p>
+
+<h4 id="容器存储接口-csi">容器存储接口（CSI）</h4>
+
+<p>​   为了更好地理解我们之后的工作，首先我们需要知道容器存储接口是什么。目前来看，Kubernetes现有的存储子系统依然存在很多问题。存储驱动程序代码维护在Kubernetes core存储库中，这一问题使测试十分不便。但除此之外，Kubernetes还需要授权存储供应商将代码签入Kubernetes核心存储库。但是理想情况下，这种需求应该在外部实现。CSI的设计目的是定义一个行业标准，该标准将使支持CSI的容器编排系统可用的存储提供者能够使用CSI。</p>
+
+<p>这张图描绘了一种与CSI结合的高级Kubernetes原型:</p>
+
+<p><img src="https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/CSI-kube.png" alt="CSI-kube" /></p>
+
+<ul>
+<li>引入了三个新的外部组件来解耦Kubernetes和存储提供程序逻辑</li>
+<li>蓝色箭头表示对API服务器调用的常规方法</li>
+<li>红色箭头表示gRPC调用卷驱动程序</li>
+</ul>
+
+<p>详见：<a href="https://github.com/container-storage-interface/spec/blob/master/spec.md">https://github.com/container-storage-interface/spec/blob/master/spec.md</a></p>
+
+<h4 id="扩展csi和kubernetes">扩展CSI和Kubernetes</h4>
+
+<p>​   为了实现在Kubernetes上扩展卷的功能，我们应该扩展多个组件，包括CSI规范、“In-Tree”卷插件、外部供应器和外部连接器。</p>
+
+<p>扩展CSI规范</p>
+
+<p>​   最新的CSI 0.2.0中还没有定义扩展量的特性。应该引入新的3个rpc，包括RequiresFSResize，ControllerResizeVolume和NodeResizeVolume。</p>
+
+<pre><code>service Controller {
+ rpc CreateVolume (CreateVolumeRequest)
+   returns (CreateVolumeResponse) {}
+……
+ rpc RequiresFSResize (RequiresFSResizeRequest)
+   returns (RequiresFSResizeResponse) {}
+ rpc ControllerResizeVolume (ControllerResizeVolumeRequest)
+   returns (ControllerResizeVolumeResponse) {}
+}
+
+service Node {
+ rpc NodeStageVolume (NodeStageVolumeRequest)
+   returns (NodeStageVolumeResponse) {}
+……
+ rpc NodeResizeVolume (NodeResizeVolumeRequest)
+   returns (NodeResizeVolumeResponse) {}
+}
+</code></pre>
+
+<h4 id="扩展-in-tree-卷插件">扩展“In-Tree”卷插件</h4>
+
+<p>​   为了扩展CSI规范，csiPlugin接口需要在Kubernetes上实现。csiPlugin接口将会扩展PersistentVolumeClaim用来代理ExpanderController。</p>
+
+<pre><code class="language-go">type ExpandableVolumePlugin interface {
+VolumePlugin
+ExpandVolumeDevice(spec Spec, newSize resource.Quantity, oldSize resource.Quantity) (resource.Quantity, error)
+RequiresFSResize() bool
+}
+</code></pre>
+
+<h4 id="实现盘卷驱动">实现盘卷驱动</h4>
+
+<p>最后，为了抽象实现的复杂性，我们应该将单独的存储提供程序管理逻辑硬编码到CSI规范中定义的以下函数中：</p>
+
+<ul>
+<li>CreateVolume</li>
+<li>DeleteVolume</li>
+<li>ControllerPublishVolume</li>
+<li>ControllerUnpublishVolume</li>
+<li>ValidateVolumeCapabilities</li>
+<li>ListVolumes</li>
+<li>GetCapacity</li>
+<li>ControllerGetCapabilities</li>
+<li>RequiresFSResize</li>
+<li>ControllerResizeVolume</li>
+</ul>
+
+<p>示例：</p>
+
+<p>让我们用一个具体的用户案例来演示这个特性。</p>
+
+<ul>
+<li><p>为CSI存储供应器创建存储类</p></li>
+
+<li><pre><code class="language-yaml">allowVolumeExpansion: true
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+name: csi-qcfs
+parameters:
+csiProvisionerSecretName: orain-test
+csiProvisionerSecretNamespace: default
+provisioner: csi-qcfsplugin
+reclaimPolicy: Delete
+volumeBindingMode: Immediate
+</code></pre></li>
+
+<li><p>跨Kubernetes集群部署CSI卷驱动程序，包括存储供应器CSI -qcfsplugin</p></li>
+
+<li><p>创建将由存储类csi-qcfs动态提供的PVC qcfs-pvc</p></li>
+
+<li><p>```yaml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+name: qcfs-pvc
+namespace: default
+&hellip;.
+spec:
+accessModes:</p>
+
+<ul>
+<li>ReadWriteOnce
+resources:
+requests:
+storage: 300Gi
+storageClassName: csi-qcfs
+```</li>
+</ul></li>
+
+<li><p>创建MySQL 5.7实例来使用PVC qcfs-pvc</p></li>
+
+<li><p>为了反映完全相同的生产级场景，这里分为两种不同类型的工作负载，包括:</p>
+
+<ul>
+<li>批量插入，使MySQL消耗更多的文件系统容量</li>
+<li>增加查询请求</li>
+</ul></li>
+
+<li><p>通过编辑pvc qcfs-pvc配置动态扩展容量</p></li>
+</ul>
+
+<p>Prometheus和Grafana的集成使我们可视化相应的关键指标。</p>
+
+<p><img src="https://raw.githubusercontent.com/caas-one/news.caas.one/master/translation/images/prometheus-grafana.png" alt="prometheus-grafana" /></p>
+
+<p>​   我们注意到中间的读数显示MySQL数据文件大小在批量插入时缓慢增加。同时，底部读数显示文件系统在大约20分钟内扩展了两次，从300G扩展到400G，然后是500G。同时，从上面的读数可以看出，整个扩容过程立即完成，对MySQL QPS影响不大。</p>
+
+<h4 id="结论">结论：</h4>
+
+<p>​   无论基础设施应用程序运行在何处，数据库始终是一个关键资源。用高级的存储子系统来完全支持数据库需求非常重要。这将有助于推动更广泛地采用云本地技术。</p>
+
+                        </div>
+
+                        
+
+
+                        <div class="post-meta meta-tags">
+                            
+                            没有标签
+                            
+                        </div>
+                    </article>
+                    
+    
+
+    
+    
+                </div>
+            </div>
+            <div id="secondary">
+    <section class="widget">
+        <form id="search" action="//www.google.com/search" method="get" accept-charset="utf-8" target="_blank" _lpchecked="1">
+      
+      <input type="text" name="q" maxlength="20" placeholder="Search">
+      <input type="hidden" name="sitesearch" value="http://caas-one.github.io/">
+      <button type="submit" class="submit icon-search"></button>
+</form>
+    </section>
+    
+    <section class="widget">
+        <h3 class="widget-title">最近文章</h3>
+        <ul class="widget-list">
+            
+            <li>
+                <a href="http://caas-one.github.io/post/news.caas.one/posts/2018-11-26-caasone-daily-news/" title="技术日报(2018-11-26)">技术日报(2018-11-26)</a>
+            </li>
+            
+            <li>
+                <a href="http://caas-one.github.io/post/news.caas.one/posts/2018-11-25-caasone-daily-news/" title="技术日报(2018-11-25)">技术日报(2018-11-25)</a>
+            </li>
+            
+            <li>
+                <a href="http://caas-one.github.io/post/news.caas.one/posts/2018-11-24-caasone-daily-news/" title="技术日报(2018-11-24)">技术日报(2018-11-24)</a>
+            </li>
+            
+            <li>
+                <a href="http://caas-one.github.io/post/news.caas.one/posts/2018-11-23-caasone-daily-news/" title="技术日报(2018-11-23)">技术日报(2018-11-23)</a>
+            </li>
+            
+            <li>
+                <a href="http://caas-one.github.io/post/news.caas.one/posts/2018-11-22-caasone-daily-news/" title="技术日报(2018-11-22)">技术日报(2018-11-22)</a>
+            </li>
+            
+            <li>
+                <a href="http://caas-one.github.io/post/news.caas.one/posts/2018-11-21-caasone-daily-news/" title="技术日报(2018-11-21)">技术日报(2018-11-21)</a>
+            </li>
+            
+            <li>
+                <a href="http://caas-one.github.io/post/news.caas.one/posts/2018-11-20-caasone-daily-news/" title="技术日报(2018-11-20)">技术日报(2018-11-20)</a>
+            </li>
+            
+            <li>
+                <a href="http://caas-one.github.io/post/news.caas.one/posts/2019-11-20-caasone-daily-news/" title="技术日报(2019-11-20)">技术日报(2019-11-20)</a>
+            </li>
+            
+            <li>
+                <a href="http://caas-one.github.io/post/news.caas.one/posts/2018-11-19-caasone-daily-news/" title="技术日报(2018-11-19)">技术日报(2018-11-19)</a>
+            </li>
+            
+            <li>
+                <a href="http://caas-one.github.io/post/news.caas.one/posts/2018-11-17-caasone-daily-news/" title="技术日报(2018-11-17)">技术日报(2018-11-17)</a>
+            </li>
+            
+        </ul>
+    </section>
+
+    <section class="widget">
+        <h3 class="widget-title">分类</h3>
+        <ul class="widget-list">
+            
+            <li>
+                <a href="/categories/daily/">daily(63)</a>
+            </li>
+            
+            <li>
+                <a href="/categories/translation/">translation(7)</a>
+            </li>
+            
+        </ul>
+    </section>
+
+    <section class="widget">
+            <h3 class="widget-title">标签</h3>
+            <div class="tagcloud">
+                
+            </div>
+        </section>
+
+    
+
+    <section class="widget">
+        <h3 class="widget-title">其它</h3>
+        <ul class="widget-list">
+            <li><a href="/index.xml">文章 RSS</a></li>
+        </ul>
+    </section>
+</div>
+        </div>
+    </div>
+</div>
+<footer id="footer">
+    <div class="container">
+        &copy; 2018 <a href="http://caas-one.github.io/">容器时代|CaaSOne By </a>.
+        Powered by <a rel="nofollow noreferer noopener" href="https://gohugo.io">Hugo</a>.
+        <a href="http://www.flysnow.org/">Theme</a> based on <a href="https://github.com/rujews/maupassant-hugo">maupassant</a>.
+        
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="/js/prism.js" async="true"></script>
+<script type="text/javascript">
+window.MathJax = {
+    tex2jax: {
+        inlineMath: [ ['$','$'] ],
+        processEscapes: true
+    }
+};
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<a id="rocket" href="#top"></a>
+<script type="text/javascript" src="/js/totop.js?v=0.0.0" async=""></script>
+
+
+
+<script type="text/javascript" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+
+
+
+
+</body>
+</html>
