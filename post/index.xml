@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 27 Nov 2018 10:59:40 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 28 Nov 2018 08:27:36 +0000</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-11-28)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-28-caasone-daily-news/</link>
+      <pubDate>Wed, 28 Nov 2018 08:27:36 +0000</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-28-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181128) Docker ENTRYPOINT &amp;amp; CMD: Dockerfile best practices https://medium.freecodecamp.org/docker-entrypoint-cmd-dockerfile-best-practices-abc591c30e21 Kubernetes:批处理作业 https://medium.com/google-cloud/kubernetes-running-background-tasks-with-batch-jobs-56482fbc853 Configuring minimal RBAC permissions for Helm and Tiller https://medium.com/@elijudah/configuring-minimal-rbac-permissions-for-helm-and-tiller-e7d792511d10 网易云不同场景 K8S 网络实践方案 https://mp.weixin.qq.com/s?__biz=MzU1OTAzNzc5MQ==&amp;amp;mid=2247486653&amp;amp;idx=1&amp;amp;sn=367e20d6cd74702de523006a34b5c976 Testing</description>
+    </item>
     
     <item>
       <title>技术日报(2018-11-27)</title>
