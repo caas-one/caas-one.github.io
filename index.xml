@@ -6,10 +6,19 @@
     <description>Recent content on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Nov 2018 08:27:36 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Nov 2018 09:44:33 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-11-29)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-11-29-caasone-daily-news/</link>
+      <pubDate>Thu, 29 Nov 2018 09:44:33 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-29-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报（20181129） 1.容器、服务网格和API网关：它始于边缘 https://www.jdon.com/49533 2.Thanos让Prometheus更精彩 https://blog.csdn.net/m2l0zgssvc7r69efdtj/article/details/80809680 3.面向容</description>
+    </item>
     
     <item>
       <title>技术日报(2018-11-28)</title>
