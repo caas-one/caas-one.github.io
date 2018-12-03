@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Dec 2018 21:28:38 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 03 Dec 2018 16:48:03 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to Run HA MySQL on Google Kubernetes.md Engine (GKE)MySQL</title>
+      <link>http://caas-one.github.io/post/news.caas.one/translation/how-to-run-ha-mysql-on-google-kubernetes.md-engine-gkemysql/</link>
+      <pubDate>Mon, 03 Dec 2018 16:48:03 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/translation/how-to-run-ha-mysql-on-google-kubernetes.md-engine-gkemysql/</guid>
+      <description>如何在Google Kubernetes Engine上运行HA MySQL 本文是“在Kubernetes中运行MySQL”系列之一。我们已经发表了多篇关于具体平台和具体用</description>
+    </item>
     
     <item>
       <title>技术日报(2018-12-02)</title>
@@ -693,6 +702,24 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/foundation/readme/</guid>
       <description>容器时代运营基金 日期 项目 收入 支出 余额 经手人 2018-10-28 Serverless获奖 1740.00元 —— 1740.00元 lth2015 2018-11-08 购买文化衫-20件 —— 1780.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://caas-one.github.io/post/news.caas.one/foundation/%E6%96%87%E5%8C%96%E8%A1%AB%E8%B5%A0%E4%B8%8E%E5%90%8D%E5%8D%95/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/foundation/%E6%96%87%E5%8C%96%E8%A1%AB%E8%B5%A0%E4%B8%8E%E5%90%8D%E5%8D%95/</guid>
+      <description>文化衫赠与名单 姓名 数量 李大伟 1 ylck 1 李卓 2 圆圆 1 武晨 1 波波可爱多一点 1 止之 1 苗立尧 4 管清波 1 秦健航 1 星璇缘 1 于立 1 Turingming 1 刘斌 1 郭莉菊 1 李卓 1 李迎</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://caas-one.github.io/post/news.caas.one/foundation/%E7%A4%BE%E5%8C%BA%E8%B4%A1%E7%8C%AE%E8%80%85%E7%A7%AF%E5%88%86%E7%BB%86%E5%88%99/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/foundation/%E7%A4%BE%E5%8C%BA%E8%B4%A1%E7%8C%AE%E8%80%85%E7%A7%AF%E5%88%86%E7%BB%86%E5%88%99/</guid>
+      <description>社区贡献者积分细则 日报 日报 * 1 point * 1 篇 （具体数量以仓库中日报文件中署名为准） 翻译 翻译 * 1.5 point * 1 篇 + （阅读量 * 1） （具体数量以仓库中翻译rea</description>
     </item>
     
     <item>
