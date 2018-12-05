@@ -6,10 +6,28 @@
     <description>Recent content in Daily on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Dec 2018 21:28:38 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 05 Dec 2018 19:35:24 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/categories/daily/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2019-12-05)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2019-12-05-caasone-daily-news/</link>
+      <pubDate>Wed, 05 Dec 2018 19:35:24 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2019-12-05-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181205) 1、kubeedge源码分析系列一：总体架构分析: http://www.sel.zju.edu.cn/?p=989 2、Kubevirt in Openshift: http://www.chenshake.com/kubevirt-in-openshift/ 3、Istio Helm Chart 详解</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-12-03)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-12-03-caasone-daily-news/</link>
+      <pubDate>Mon, 03 Dec 2018 14:30:30 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-12-03-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181203) 1、什么是Kubernetes？ 容器编排工具简介: https://www.edureka.co/blog/what-is-kubernetes-container-orchestration 2、kubernetes networking: https://dzone.com/articles/kubernetes-networking 3 Kubernetes 1.13 release announcement: https://kubernetes.io/blog/2018/12/03/kubernetes-1-13-release-announcement/ 4、Ti</description>
+    </item>
     
     <item>
       <title>技术日报(2018-12-02)</title>

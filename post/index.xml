@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Dec 2018 16:48:03 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 05 Dec 2018 19:35:24 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2019-12-05)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2019-12-05-caasone-daily-news/</link>
+      <pubDate>Wed, 05 Dec 2018 19:35:24 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2019-12-05-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181205) 1、kubeedge源码分析系列一：总体架构分析: http://www.sel.zju.edu.cn/?p=989 2、Kubevirt in Openshift: http://www.chenshake.com/kubevirt-in-openshift/ 3、Istio Helm Chart 详解</description>
+    </item>
     
     <item>
       <title>How to Run HA MySQL on Google Kubernetes.md Engine (GKE)MySQL</title>
@@ -18,6 +27,15 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/translation/how-to-run-ha-mysql-on-google-kubernetes.md-engine-gkemysql/</guid>
       <description>如何在Google Kubernetes Engine上运行HA MySQL 本文是“在Kubernetes中运行MySQL”系列之一。我们已经发表了多篇关于具体平台和具体用</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-12-03)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-12-03-caasone-daily-news/</link>
+      <pubDate>Mon, 03 Dec 2018 14:30:30 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-12-03-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181203) 1、什么是Kubernetes？ 容器编排工具简介: https://www.edureka.co/blog/what-is-kubernetes-container-orchestration 2、kubernetes networking: https://dzone.com/articles/kubernetes-networking 3 Kubernetes 1.13 release announcement: https://kubernetes.io/blog/2018/12/03/kubernetes-1-13-release-announcement/ 4、Ti</description>
     </item>
     
     <item>
@@ -729,6 +747,15 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-10-08-caasone-daily-news/</guid>
       <description>title: &amp;ldquo;技术日报(2018-10-08)&amp;rdquo; date: 2018-10-08T00:00:00+08:00 categories: [ &amp;ldquo;daily&amp;rdquo;] draft: false ﻿[容器时代]技术日报（20181008） 1.超详细的认证授权机</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-12-04-caasone-daily-news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-12-04-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181204) 1、新版发行+被爆首个严重漏洞: https://mp.weixin.qq.com/s/p_X1Wg-DCgf3hTAmsqCkEQ 2、蚂蚁金服Service Mesh新型网络代理的思考与实践 | GIAC 分享</description>
     </item>
     
     <item>
