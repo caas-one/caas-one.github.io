@@ -6,10 +6,19 @@
     <description>Recent content on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Dec 2018 10:44:33 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Dec 2018 19:38:42 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-12-08)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-12-08-caasone-daily-news/</link>
+      <pubDate>Sun, 09 Dec 2018 19:38:42 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-12-08-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181208) 安全事故：Kubernetes遭遇大范围劫持 https://mp.weixin.qq.com/s/KKwM0oGXvZ0rmlmpLjnl8A Managed Kubernetes: AWS vs. Azure vs. Google Cloud https://www.infoworld.com/article/3317559/kubernetes/managed-kubernetes-aws-vs-azure-vs-google-cloud.html Openshift install Kubevirt http://www.chenshake.com/openshift-install-kubevirt/ gRPC Load Balancing on Kubernetes without Tears https://kubernetes.io/blog/page/5/ 小米开源 Istio 工</description>
+    </item>
     
     <item>
       <title>技术日报(2018-12-07)</title>
@@ -153,6 +162,15 @@
       
       <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-11-22-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181122) IPVS-Based In-Cluster Load Balancing Deep Dive: https://kubernetes.io/zh/blog/2018/07/09/ipvs-based-in-cluster-load-balancing-deep-dive/ How to scale Microservices with Message Queues, Spring Boot, and Kubernetes: https://medium.freecodecamp.org/how-to-scale-microservices-with-message-queues-spring-boot-and-kubernetes-f691b7ba3acf 新型云基础设施项目Airship 介绍: https://www.sdnlab.com/22558.html Convergence to Kubernetes: https://medium.com/@pingles/convergence-to-kubernetes-137ffa7ea2bc The missing CI/CD Kubernetes component: Helm package</description>
+    </item>
+    
+    <item>
+      <title>技术日报(2018-11-22)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-12-09-caasone-daily-news/</link>
+      <pubDate>Thu, 22 Nov 2018 21:50:11 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-12-09-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181209) Docker镜像仓库清理的探索之路: https://weibo.com/ttarticle/p/show?id=2309404314247319427870 基于 CSI Kubernetes 存储插件的开发实践: https://weibo.com/ttarticle/p/show?id=2309404314294589199777 docker之gitlab和je</description>
     </item>
     
     <item>
