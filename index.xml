@@ -6,10 +6,19 @@
     <description>Recent content on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Dec 2018 09:40:42 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Dec 2018 22:23:21 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-12-15)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-12-15-caasone-daily-news/</link>
+      <pubDate>Sat, 15 Dec 2018 22:23:21 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-12-15-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181213) 如何从零开始编写一个Kubernetes CRD https://mp.weixin.qq.com/s/z_xM8QqpRUASDM1UyMzEeA KubeCon-North-America-2018 https://github.com/warmchang/KubeCon-North-America-2018 Developing With Containers Done Right https://medium.com/google-cloud/developing-with-containers-done-right-831a4bae1d28 微软发布多项 Azure Kubernetes 服务更新，增加 GPU 支持 https://www.infoq.cn/article/YL1shQUBpKZ*xK1xKMfv k</description>
+    </item>
     
     <item>
       <title>技术日报(2018-12-14)</title>
