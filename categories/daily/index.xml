@@ -6,10 +6,19 @@
     <description>Recent content in Daily on 容器时代|CaaSOne</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Dec 2018 22:26:48 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 24 Dec 2018 22:27:34 +0800</lastBuildDate>
     
 	<atom:link href="http://caas-one.github.io/categories/daily/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>技术日报(2018-12-22)</title>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-12-22-caasone-daily-news/</link>
+      <pubDate>Mon, 24 Dec 2018 22:27:34 +0800</pubDate>
+      
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-12-22-caasone-daily-news/</guid>
+      <description>[容器时代]技术日报(20181222) 1、大闹 KubeCon：Istio 已成 Cloud Native 新宠？: https://blog.fleeto.us/post/has-istio-become-the-new-cn-darling 2、Kubernetes Monitoring 101 — Core pipeline &amp;amp; Services Pipeline: https://medium.com/magalix/kubernetes-monitoring-101-core-pipeline-services-pipeline-a34cd4cc9627 3、A</description>
+    </item>
     
     <item>
       <title>技术日报(2018-12-25)</title>
@@ -130,10 +139,10 @@
     
     <item>
       <title>技术日报(2019-12-05)</title>
-      <link>http://caas-one.github.io/post/news.caas.one/posts/2019-12-05-caasone-daily-news/</link>
+      <link>http://caas-one.github.io/post/news.caas.one/posts/2018-12-05-caasone-daily-news/</link>
       <pubDate>Wed, 05 Dec 2018 19:35:24 +0800</pubDate>
       
-      <guid>http://caas-one.github.io/post/news.caas.one/posts/2019-12-05-caasone-daily-news/</guid>
+      <guid>http://caas-one.github.io/post/news.caas.one/posts/2018-12-05-caasone-daily-news/</guid>
       <description>[容器时代]技术日报(20181205) 1、kubeedge源码分析系列一：总体架构分析: http://www.sel.zju.edu.cn/?p=989 2、Kubevirt in Openshift: http://www.chenshake.com/kubevirt-in-openshift/ 3、Istio Helm Chart 详解</description>
     </item>
     
